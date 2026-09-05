@@ -1,0 +1,2633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Eben Foundry — Turn your business into a growth system</title>
+<meta name="description" content="Eben Foundry builds AI automation, digital marketing and business growth infrastructure designed around how your business actually acquires, converts and retains customers." />
+<meta name="theme-color" content="#1E3026" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Eben Foundry" />
+<meta property="og:title" content="Eben Foundry — Turn your business into a growth system" />
+<meta property="og:description" content="Eben Foundry builds industry-specific growth systems: AI automation, digital marketing and business growth infrastructure designed around how your business actually earns. One engine, many business models." />
+<meta property="og:image" content="https://media.base44.com/images/public/6a9aac465fb3bc08fceb8700/f55f178c4_generated_image.png" />
+<meta property="og:image:alt" content="Eben Foundry — Turn your business into a growth system" />
+<meta property="og:locale" content="en_ZA" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Eben Foundry — Turn your business into a growth system" />
+<meta name="twitter:description" content="Industry-specific growth systems for ambitious South African businesses. One engine. Many business models." />
+<meta name="twitter:image" content="https://media.base44.com/images/public/6a9aac465fb3bc08fceb8700/f55f178c4_generated_image.png" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Eben Foundry",
+  "description": "Growth infrastructure company building business-specific growth systems — AI automation, digital marketing and business growth systems — designed around how a business actually earns.",
+  "areaServed": "South Africa",
+  "knowsAbout": ["AI automation", "business automation", "digital marketing", "business growth systems", "lead generation", "customer acquisition", "business process automation"],
+  "slogan": "One engine. Many business models."
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<style>
+/* ============================================================
+   EBEN FOUNDRY — DESIGN SYSTEM
+   Palette: warm ivory, charcoal, matte dark green, restrained gold
+   ============================================================ */
+:root {
+  --ivory: #F4EFE6;
+  --ivory-2: #EDE6D8;
+  --sand: #E0D6C2;
+  --line: rgba(38, 36, 30, 0.14);
+  --line-light: rgba(244, 239, 230, 0.16);
+  --charcoal: #26241E;
+  --charcoal-2: #322F27;
+  --ink: #2B2823;
+  --muted: #6E675A;
+  --green: #1E3026;
+  --green-2: #2A4033;
+  --gold: #B08D45;
+  --gold-soft: #CDB075;
+  --gold-faint: rgba(176, 141, 69, 0.14);
+  --radius: 4px;
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body: "Manrope", -apple-system, sans-serif;
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-body);
+  background: var(--ivory);
+  color: var(--ink);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+}
+
+img { max-width: 100%; display: block; }
+
+::selection { background: var(--gold); color: var(--charcoal); }
+
+/* ---------- Typography ---------- */
+.display {
+  font-family: var(--font-display);
+  font-weight: 500;
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+}
+.kicker {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+.page-title { font-size: clamp(38px, 6vw, 68px); }
+.page-sub { font-size: clamp(17px, 2vw, 20px); color: var(--muted); max-width: 640px; }
+.section-title { font-size: clamp(28px, 4vw, 44px); }
+.lead { font-size: clamp(16px, 2vw, 19px); color: var(--muted); }
+
+/* ---------- Layout ---------- */
+.wrap { max-width: 1180px; margin: 0 auto; padding: 0 24px; }
+.page { display: none; min-height: 60vh; padding: 130px 0 90px; }
+.page.active { display: block; animation: pageIn 0.55s var(--ease) both; }
+@keyframes pageIn { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
+.section { padding: 64px 0; }
+.section + .section { border-top: 1px solid var(--line); }
+.grid { display: grid; gap: 24px; }
+
+/* ---------- Header ---------- */
+header {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  background: rgba(244, 239, 230, 0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--line);
+}
+.header-inner {
+  display: flex; align-items: center; justify-content: space-between;
+  height: 72px;
+}
+.brand {
+  display: flex; align-items: baseline; gap: 10px; text-decoration: none;
+  cursor: pointer;
+}
+.brand-mark {
+  font-family: var(--font-display);
+  font-size: 22px; font-weight: 600; letter-spacing: 0.18em;
+  color: var(--charcoal);
+}
+.brand-mark .gold { color: var(--gold); }
+.brand-sub {
+  font-size: 9px; font-weight: 700; letter-spacing: 0.3em;
+  text-transform: uppercase; color: var(--muted);
+}
+nav.main-nav { display: flex; align-items: center; gap: 30px; }
+nav.main-nav a {
+  font-size: 12px; font-weight: 700; letter-spacing: 0.14em;
+  text-transform: uppercase; text-decoration: none;
+  color: var(--ink); opacity: 0.75;
+  padding: 6px 2px; border-bottom: 2px solid transparent;
+  transition: opacity 0.25s, border-color 0.25s;
+}
+nav.main-nav a:hover, nav.main-nav a.active { opacity: 1; border-color: var(--gold); }
+.nav-cta {
+  background: var(--green); color: var(--ivory) !important;
+  padding: 11px 20px !important; border: none;
+  letter-spacing: 0.14em; border-radius: var(--radius);
+  transition: background 0.25s;
+  display: inline-block;
+}
+.nav-cta:hover { background: var(--green-2); border-color: var(--green-2); }
+
+.hamburger { display: none; background: none; border: none; cursor: pointer; padding: 8px; }
+.hamburger span { display: block; width: 24px; height: 2px; background: var(--charcoal); margin: 5px 0; transition: transform 0.3s, opacity 0.3s; }
+.hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.hamburger.open span:nth-child(2) { opacity: 0; }
+.hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+.mobile-menu {
+  display: none; flex-direction: column; gap: 4px;
+  background: var(--ivory); border-bottom: 1px solid var(--line);
+  padding: 12px 24px 24px;
+}
+.mobile-menu.open { display: flex; }
+.mobile-menu a {
+  padding: 14px 0; text-decoration: none; color: var(--ink);
+  font-weight: 700; font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase;
+  border-bottom: 1px solid var(--line);
+}
+
+/* ---------- Gateway: Pick a Letter (immersive entrance) ---------- */
+#page-home { padding-top: 0; }
+.gateway-hero {
+  min-height: calc(100svh - 72px);
+  display: grid; place-items: center;
+  padding: calc(72px + 26px) 16px 34px;
+  position: relative;
+}
+.gateway-frame {
+  text-align: center; width: 100%; max-width: 640px;
+  position: relative;
+}
+.gw-sparkle {
+  color: var(--gold);
+  filter: drop-shadow(0 0 6px rgba(198, 160, 90, 0.55));
+  margin: 0 auto clamp(10px, 2vh, 16px);
+  display: block;
+}
+.gw-pick {
+  font-family: var(--font-display);
+  font-size: clamp(15px, 3vw, 20px); font-weight: 600;
+  letter-spacing: 0.34em; text-transform: uppercase;
+  color: #8a6a3c; margin: 0 0 clamp(14px, 2.6vh, 20px);
+  text-shadow: 0 0 22px rgba(198, 160, 90, 0.42), 0 0 64px rgba(198, 160, 90, 0.2);
+}
+.gw-tagline {
+  font-family: var(--font-body); font-weight: 800;
+  font-size: clamp(12.5px, 2.1vw, 15px); letter-spacing: 0.16em;
+  text-transform: uppercase; color: var(--charcoal);
+  line-height: 1.7; margin: 0 0 clamp(20px, 4vh, 32px);
+}
+.gw-letters {
+  display: grid; grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(8px, 2.6vw, 30px);
+  max-width: 520px; margin: 0 auto;
+}
+.eben-letter {
+  font-family: var(--font-display); font-weight: 500;
+  font-size: clamp(46px, 12vw, 78px);
+  line-height: 1;
+  color: var(--charcoal);
+  background: none; border: none; cursor: pointer;
+  padding: 0;
+  transition: transform 0.5s var(--ease), color 0.5s, opacity 0.45s, filter 0.45s, text-shadow 0.5s;
+  position: relative;
+  min-width: 44px; min-height: 44px; /* thumb-friendly hit area */
+}
+.eben-letter.accent { color: var(--green); }
+.eben-letter:hover, .eben-letter:focus-visible {
+  color: var(--green);
+  transform: translateY(-4px) scale(1.05);
+  text-shadow: 0 8px 30px rgba(36, 84, 56, 0.18);
+}
+.eben-letter:focus-visible { outline: 2px solid var(--gold); outline-offset: 8px; }
+
+/* photographic archway doors, one column per letter */
+.gw-doors {
+  display: grid; grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(8px, 2.6vw, 30px);
+  max-width: 520px; margin: clamp(10px, 2vh, 16px) auto 0;
+}
+.gw-door {
+  display: block; width: 100%;
+  aspect-ratio: 0.46 / 1;
+  border-top-left-radius: 999px; border-top-right-radius: 999px;
+  border-bottom-left-radius: 6px; border-bottom-right-radius: 6px;
+  background-image: url("assets/door-closed.jpg");
+  background-size: cover; background-position: center top;
+  box-shadow: 0 10px 26px rgba(38, 36, 30, 0.16);
+  transition: transform 0.5s var(--ease), box-shadow 0.5s var(--ease);
+}
+.gw-door.open {
+  background-image: url("assets/door-open-green.jpg");
+  box-shadow: 0 12px 34px rgba(30, 48, 38, 0.28), 0 0 40px rgba(198, 160, 90, 0.18);
+}
+.gateway-frame:has(.eben-letter:nth-child(1):hover) .gw-doors .gw-door:nth-child(1),
+.gateway-frame:has(.eben-letter:nth-child(2):hover) .gw-doors .gw-door:nth-child(2),
+.gateway-frame:has(.eben-letter:nth-child(3):hover) .gw-doors .gw-door:nth-child(3),
+.gateway-frame:has(.eben-letter:nth-child(4):hover) .gw-doors .gw-door:nth-child(4) {
+  transform: translateY(-3px) scale(1.04);
+  box-shadow: 0 16px 34px rgba(38, 36, 30, 0.22);
+}
+
+/* selected-state: the whole gateway reacts as one system while transitioning */
+.gateway-frame.selecting .eben-letter { opacity: 0.24; filter: blur(2.5px); transform: scale(0.94); }
+.gateway-frame.selecting .gw-door { opacity: 0.35; }
+.gateway-frame.selecting .eben-letter.selected {
+  opacity: 1; filter: none;
+  color: var(--green);
+  transform: scale(1.1) translateY(-5px);
+  text-shadow: 0 10px 34px rgba(36, 84, 56, 0.22);
+}
+.gateway-frame.selecting:has(.eben-letter:nth-child(1).selected) .gw-doors .gw-door:nth-child(1),
+.gateway-frame.selecting:has(.eben-letter:nth-child(2).selected) .gw-doors .gw-door:nth-child(2),
+.gateway-frame.selecting:has(.eben-letter:nth-child(3).selected) .gw-doors .gw-door:nth-child(3),
+.gateway-frame.selecting:has(.eben-letter:nth-child(4).selected) .gw-doors .gw-door:nth-child(4) {
+  opacity: 1; transform: scale(1.06);
+  box-shadow: 0 16px 40px rgba(30, 48, 38, 0.3), 0 0 44px rgba(198, 160, 90, 0.22);
+}
+
+.gateway-caption { color: var(--muted); font-size: 14px; max-width: 460px; margin: clamp(22px, 4vh, 34px) auto 0; }
+.gateway-caption em { font-style: italic; }
+.gw-divider {
+  width: clamp(90px, 20vw, 150px); height: 1px; margin: clamp(18px, 3vh, 26px) auto 0;
+  background: linear-gradient(90deg, transparent, var(--gold-soft), transparent);
+}
+.gw-cta {
+  font-family: var(--font-body); font-weight: 700;
+  font-size: clamp(10.5px, 2.2vw, 13px);
+  letter-spacing: 0.3em; text-transform: uppercase;
+  color: #8a6a3c; margin: clamp(14px, 2.5vh, 22px) auto 0;
+  text-shadow: 0 0 18px rgba(198, 160, 90, 0.45), 0 0 52px rgba(198, 160, 90, 0.22);
+}
+.gw-hand {
+  color: var(--gold); margin: clamp(10px, 2vh, 14px) auto 0; display: block;
+  filter: drop-shadow(0 0 10px rgba(198, 160, 90, 0.5));
+  animation: handTap 1.8s ease-in-out infinite;
+}
+@keyframes handTap { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(4px); } }
+.gw-tap { display: none; }
+@media (hover: none) and (pointer: coarse) {
+  .gw-tap { display: inline; }
+  .gw-click { display: none; }
+}
+
+.gateway-intro { padding: clamp(44px, 8vh, 76px) 0 8px; }
+.gateway-intro h2 { font-size: clamp(24px, 4vw, 34px); margin: 18px 0; }
+
+/* ---------- Enter (letter transition) screens ---------- */
+#page-enter { padding-top: 0; }
+.enter-screen {
+  min-height: calc(100svh - 72px);
+  display: flex; flex-direction: column;
+  max-width: 980px; margin: 0 auto;
+  padding: calc(72px + 16px) clamp(16px, 4vw, 36px) 28px;
+}
+.enter-head { display: flex; align-items: center; gap: 18px; }
+.enter-back {
+  width: 46px; height: 46px; flex: none;
+  display: grid; place-items: center;
+  border: 1px solid var(--line); border-radius: 999px;
+  color: var(--charcoal); font-size: 19px; text-decoration: none;
+  transition: border-color 0.3s var(--ease), background 0.3s var(--ease), transform 0.3s var(--ease);
+}
+.enter-back:hover, .enter-back:focus-visible { border-color: var(--gold); background: var(--ivory-2); transform: translateX(-2px); }
+.enter-brand {
+  font-family: var(--font-display); font-weight: 600;
+  font-size: 14px; letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--charcoal); text-decoration: none;
+}
+.enter-brand .thin { font-weight: 300; }
+.enter-progress { display: flex; gap: 6px; margin: clamp(14px, 2.5vh, 22px) 0 0; }
+.enter-progress i { flex: 1; height: 2px; background: var(--line); border-radius: 2px; transition: background 0.4s; }
+.enter-progress i.on { background: var(--gold); }
+.enter-body {
+  flex: 1; display: flex; flex-direction: column; align-items: center;
+  text-align: center; padding-top: clamp(14px, 3vh, 30px);
+}
+.enter-letter {
+  font-family: var(--font-display); font-weight: 500;
+  font-size: clamp(64px, 13vw, 112px); line-height: 0.95;
+  color: var(--charcoal);
+}
+.enter-label {
+  font-size: 11px; font-weight: 700; letter-spacing: 0.32em; text-transform: uppercase;
+  color: var(--muted); margin: clamp(8px, 1.6vh, 14px) 0 2px;
+}
+.enter-word {
+  font-family: var(--font-display); font-weight: 600;
+  font-size: clamp(24px, 5vw, 38px); letter-spacing: 0.14em;
+  color: var(--green); margin: 0 0 clamp(14px, 2.8vh, 24px);
+}
+.enter-vista {
+  width: 100%; max-width: 860px; margin: 0;
+  aspect-ratio: 16 / 10;
+  border-radius: var(--radius); overflow: hidden;
+  border: 1px solid var(--line);
+  box-shadow: 0 30px 70px -34px rgba(31, 28, 24, 0.45);
+  background: var(--ivory-2);
+}
+.enter-vista img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.enter-cta {
+  margin-top: clamp(16px, 3.2vh, 26px);
+  font-family: var(--font-display); font-weight: 600;
+  letter-spacing: 0.24em;
+}
+
+/* cinematic entrance */
+@keyframes enterLetter { from { opacity: 0; transform: translateY(14px) scale(0.97); } to { opacity: 1; transform: none; } }
+@keyframes enterVista { from { opacity: 0; transform: scale(1.035); } to { opacity: 1; transform: none; } }
+.enter-body.entering .enter-letter { animation: enterLetter 0.8s var(--ease) both; }
+.enter-body.entering .enter-word, .enter-body.entering .enter-label { animation: enterLetter 0.7s var(--ease) 0.1s both; }
+.enter-body.entering .enter-vista { animation: enterVista 1.1s var(--ease) 0.15s both; }
+.enter-body.entering .enter-cta { animation: enterLetter 0.7s var(--ease) 0.45s both; }
+
+@media (max-width: 560px) {
+  .enter-vista { aspect-ratio: 4 / 3; }
+  }
+
+/* ---------- Hero ---------- */
+.hero { text-align: center; padding: 72px 0 64px; }
+.hero h1 { font-size: clamp(48px, 8.5vw, 104px); letter-spacing: 0.06em; margin: 22px 0; }
+.hero h1 .thin { font-weight: 300; }
+.hero-tagline {
+  font-family: var(--font-display);
+  font-size: clamp(21px, 3.4vw, 34px);
+  color: var(--green);
+  margin-bottom: 22px; font-weight: 500;
+}
+.hero-statement { max-width: 720px; margin: 0 auto 42px; }
+.cta-row { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+
+.btn {
+  display: inline-block; border-radius: var(--radius);
+  font-family: var(--font-body); font-weight: 700;
+  font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase;
+  padding: 17px 32px; cursor: pointer; text-decoration: none;
+  transition: all 0.3s var(--ease); text-align: center;
+}
+.btn-primary { background: var(--green); color: var(--ivory); border: 1px solid var(--green); }
+.btn-primary:hover { background: var(--green-2); transform: translateY(-2px); }
+.btn-outline { background: transparent; color: var(--ink); border: 1px solid var(--charcoal); }
+.btn-outline:hover { background: var(--charcoal); color: var(--ivory); transform: translateY(-2px); }
+.btn-gold { background: transparent; color: var(--gold); border: 1px solid var(--gold); }
+.btn-gold:hover { background: var(--gold); color: var(--charcoal); transform: translateY(-2px); }
+
+/* ---------- Engine strip / journey ---------- */
+.engine-strip {
+  background: var(--charcoal); color: var(--ivory);
+  padding: 20px 0; overflow: hidden;
+  border-top: 1px solid var(--charcoal-2);
+}
+.marquee { display: flex; gap: 0; white-space: nowrap; animation: marquee 30s linear infinite; }
+.marquee span {
+  font-size: 12px; font-weight: 700; letter-spacing: 0.3em; text-transform: uppercase;
+  color: var(--gold-soft); padding: 0 26px; position: relative;
+}
+.marquee span::after { content: "·"; position: absolute; right: -8px; color: var(--green-2); }
+@keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+.journey-rail {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: center;
+  gap: 6px 0; margin-top: 44px;
+}
+.rail-step {
+  font-size: 12px; font-weight: 800; letter-spacing: 0.22em; text-transform: uppercase;
+  color: var(--charcoal); padding: 12px 18px; border: 1px solid var(--line);
+  background: var(--ivory-2); border-radius: var(--radius);
+}
+.rail-arrow { color: var(--gold); padding: 0 12px; font-size: 14px; }
+
+/* ---------- Cards ---------- */
+.card {
+  background: var(--ivory-2); border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 30px 28px;
+  transition: transform 0.3s var(--ease), border-color 0.3s;
+}
+.card:hover { transform: translateY(-4px); border-color: var(--gold); }
+.card h3 { font-family: var(--font-display); font-size: 24px; font-weight: 600; margin-bottom: 12px; }
+.card .num { font-family: var(--font-display); font-size: 15px; color: var(--gold); font-weight: 600; letter-spacing: 0.1em; }
+.card p { color: var(--muted); font-size: 14.5px; }
+.card ul { list-style: none; margin-top: 16px; }
+.card ul li {
+  padding: 9px 0 9px 24px; font-size: 14px; color: var(--ink);
+  border-bottom: 1px solid var(--line); position: relative;
+}
+.card ul li:last-child { border-bottom: none; }
+.card ul li::before {
+  content: ""; position: absolute; left: 2px; top: 15px;
+  width: 8px; height: 8px; border-radius: 50%;
+  background: var(--gold); opacity: 0.85;
+}
+.card.dark { background: var(--green); border-color: var(--green-2); color: var(--ivory); }
+.card.dark h3 { color: var(--ivory); }
+.card.dark p { color: rgba(244, 239, 230, 0.72); }
+.card.dark ul li { color: var(--ivory); border-color: var(--line-light); }
+.card.dark ul li::before { background: var(--gold-soft); }
+
+/* ---------- Model selector / pills ---------- */
+.pill-row { display: flex; gap: 10px; flex-wrap: wrap; margin: 28px 0; }
+.pill {
+  font-size: 11px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase;
+  padding: 11px 18px; border-radius: 999px; cursor: pointer;
+  border: 1px solid var(--line); background: transparent; color: var(--muted);
+  transition: all 0.25s;
+}
+.pill:hover { border-color: var(--gold); color: var(--ink); }
+.pill.active { background: var(--charcoal); color: var(--ivory); border-color: var(--charcoal); }
+.pill.active.gold { background: var(--gold); border-color: var(--gold); color: var(--charcoal); }
+
+/* ---------- Pricing ---------- */
+.price-card { position: relative; display: flex; flex-direction: column; }
+.price-card.featured { border-color: var(--gold); box-shadow: 0 18px 44px -22px rgba(176,141,69,0.45); }
+.price-badge {
+  position: absolute; top: -13px; left: 26px;
+  background: var(--gold); color: var(--charcoal);
+  font-size: 9px; font-weight: 800; letter-spacing: 0.22em; text-transform: uppercase;
+  padding: 6px 12px; border-radius: 999px;
+}
+.price-line { display: flex; align-items: baseline; gap: 8px; margin: 14px 0 4px; }
+.price-amount { font-family: var(--font-display); font-size: 40px; font-weight: 600; }
+.price-period { font-size: 13px; color: var(--muted); }
+.price-sub { font-size: 13px; color: var(--muted); }
+.price-actions { margin-top: auto; padding-top: 24px; display: grid; gap: 10px; }
+
+.pay-toggle { display: flex; gap: 10px; margin: 20px 0 34px; flex-wrap: wrap; }
+.pay-opt {
+  flex: 1; min-width: 200px; text-align: center; cursor: pointer;
+  border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 15px 18px; background: transparent; transition: all 0.25s;
+}
+.pay-opt .pay-opt-title { font-size: 12px; font-weight: 800; letter-spacing: 0.18em; text-transform: uppercase; }
+.pay-opt .pay-opt-desc { font-size: 12px; color: var(--muted); margin-top: 4px; }
+.pay-opt.active { border-color: var(--gold); background: var(--gold-faint); }
+.pay-opt.active .pay-opt-title { color: var(--gold); }
+.installment-note { font-size: 12.5px; color: var(--muted); margin-top: 18px; text-align: center; }
+
+.impl-retainer { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+@media (max-width: 720px) { .impl-retainer { grid-template-columns: 1fr; } }
+.ir-box { border: 1px solid var(--line); border-radius: var(--radius); padding: 26px; background: var(--ivory-2); }
+.ir-box h4 { font-family: var(--font-display); font-size: 19px; margin-bottom: 8px; }
+.ir-box p, .ir-box li { font-size: 13.5px; color: var(--muted); }
+.ir-box ul { list-style: none; margin-top: 10px; }
+.ir-box li { padding: 5px 0 5px 18px; position: relative; }
+.ir-box li::before { content: "—"; position: absolute; left: 0; color: var(--gold); }
+
+/* ---------- Industry journeys ---------- */
+.journey-visual {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-start;
+  gap: 8px; margin-top: 18px;
+}
+.journey-node {
+  font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase;
+  padding: 9px 14px; border-radius: 999px;
+  background: var(--ivory); border: 1px solid var(--gold);
+  color: var(--ink);
+}
+.journey-sep { color: var(--gold); font-size: 12px; }
+
+/* ---------- Forms ---------- */
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.form-grid .full { grid-column: 1 / -1; }
+@media (max-width: 640px) { .form-grid { grid-template-columns: 1fr; } }
+.field label {
+  display: block; font-size: 11px; font-weight: 700;
+  letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--muted); margin-bottom: 7px;
+}
+.field label .req { color: var(--gold); }
+.field input, .field select, .field textarea {
+  width: 100%; padding: 13px 14px;
+  border: 1px solid var(--line); border-radius: var(--radius);
+  background: var(--ivory); color: var(--ink);
+  font-family: var(--font-body); font-size: 15px;
+  transition: border-color 0.25s;
+  -webkit-appearance: none; appearance: none;
+}
+.field select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23B08D45' stroke-width='1.6' fill='none'/%3E%3C/svg%3E");
+  background-repeat: no-repeat; background-position: right 14px center;
+  padding-right: 36px;
+}
+.field textarea { min-height: 110px; resize: vertical; }
+.field input:focus, .field select:focus, .field textarea:focus {
+  outline: none; border-color: var(--gold);
+}
+.field .error { display: none; font-size: 12px; color: #9C3B26; margin-top: 5px; }
+.field.invalid input, .field.invalid select, .field.invalid textarea { border-color: #9C3B26; }
+.field.invalid .error { display: block; }
+.consent-row { display: flex; gap: 12px; align-items: flex-start; margin-top: 4px; }
+.consent-row input { width: 17px; height: 17px; margin-top: 3px; accent-color: var(--gold); flex-shrink: 0; }
+.consent-row label { font-size: 13px; text-transform: none; letter-spacing: 0; font-weight: 500; color: var(--muted); line-height: 1.5; }
+.form-status { margin-top: 18px; font-size: 14px; display: none; padding: 15px 18px; border-radius: var(--radius); }
+.form-status.ok { display: block; background: rgba(30, 48, 38, 0.08); border: 1px solid var(--green); color: var(--green); }
+.form-status.err { display: block; background: rgba(156, 59, 38, 0.07); border: 1px solid #9C3B26; color: #9C3B26; }
+.btn[disabled] { opacity: 0.55; cursor: not-allowed; transform: none !important; }
+
+/* ---------- Footer ---------- */
+footer { background: var(--charcoal); color: var(--ivory); margin-top: 60px; }
+.footer-inner { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px; padding: 64px 0 40px; }
+@media (max-width: 820px) { .footer-inner { grid-template-columns: 1fr; gap: 30px; } }
+.footer-brand { font-family: var(--font-display); font-size: 26px; letter-spacing: 0.16em; }
+.footer-brand .gold { color: var(--gold-soft); }
+footer p { color: rgba(244, 239, 230, 0.6); font-size: 14px; margin-top: 12px; max-width: 320px; }
+.footer-col h5 { font-size: 11px; font-weight: 700; letter-spacing: 0.28em; text-transform: uppercase; color: var(--gold-soft); margin-bottom: 16px; }
+.footer-col a { display: block; color: rgba(244, 239, 230, 0.75); text-decoration: none; font-size: 14px; padding: 5px 0; transition: color 0.2s; }
+.footer-col a:hover { color: var(--gold-soft); }
+.footer-base { border-top: 1px solid var(--line-light); padding: 22px 0; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; font-size: 12px; color: rgba(244, 239, 230, 0.45); }
+
+/* ---------- Utility ---------- */
+.text-center { text-align: center; }
+.mt-1 { margin-top: 12px; } .mt-2 { margin-top: 24px; } .mt-3 { margin-top: 40px; }
+.mb-2 { margin-bottom: 24px; }
+.muted { color: var(--muted); }
+.note {
+  font-size: 13px; color: var(--muted); border-left: 2px solid var(--gold);
+  padding-left: 14px; margin-top: 20px; max-width: 640px;
+}
+.gold-divider { width: 54px; height: 2px; background: var(--gold); margin: 26px 0; }
+
+/* ---------- Phase 3: a11y, contrast, founder, vision ---------- */
+.skip-link {
+  position: absolute; left: -9999px; top: 12px; z-index: 200;
+  background: var(--charcoal); color: var(--ivory); padding: 12px 22px;
+  border-radius: var(--radius); font-size: 13px; font-weight: 700; text-decoration: none;
+}
+.skip-link:focus { left: 12px; }
+
+footer a { padding: 8px 0; display: inline-block; }
+
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+  outline: 2px solid var(--green); outline-offset: 2px; border-radius: 2px;
+}
+.eben-letter:focus-visible { outline: 3px solid var(--gold); outline-offset: 6px; }
+
+:root { --gold-ink: #806330; }
+.kicker, .fm-kicker, .num, .meta-pill.gold, .chain-node.gold, .tier-line, .flow-node.hot, .price-label { color: var(--gold-ink); }
+.gold { color: var(--gold-ink); }
+.kicker { letter-spacing: 0.28em; }
+
+.founder-grid { display: grid; grid-template-columns: minmax(220px, 260px) 1fr; gap: 32px; align-items: start; }
+.founder-photo {
+  background: var(--ivory-2); border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 30px 28px; position: relative;
+  display: flex; align-items: center; justify-content: center;
+}
+.founder-photo .fp-frame {
+  aspect-ratio: 4 / 5; border: 1px dashed var(--gold-soft); border-radius: calc(var(--radius) - 4px);
+  display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 10px;
+  background: linear-gradient(180deg, var(--ivory), var(--ivory-2));
+}
+.founder-photo .fp-img {
+  width: 100%; max-width: 170px; aspect-ratio: 4 / 5; object-fit: cover; display: block;
+  border-radius: calc(var(--radius) - 8px); background: var(--ivory); margin: 0 auto;
+}
+.fp-frame .fp-mark { font-family: var(--font-display); font-size: 56px; font-weight: 600; color: var(--green); letter-spacing: 0.06em; }
+.fp-frame .fp-cap { font-size: 10px; font-weight: 700; letter-spacing: 0.24em; text-transform: uppercase; color: var(--muted); }
+.founder-photo figcaption { font-size: 12px; color: var(--muted); margin-top: 10px; text-align: center; }
+.founder-bio p { font-size: 15px; }
+.founder-quote {
+  border-left: 2px solid var(--gold); padding: 4px 0 4px 18px; margin-top: 18px;
+  font-family: var(--font-display); font-size: 17px; font-style: italic; color: var(--ink);
+}
+.vision-panel {
+  border: 1px solid var(--gold-soft); border-radius: var(--radius);
+  background: linear-gradient(180deg, var(--ivory-2), var(--ivory)); padding: clamp(28px, 5vw, 48px);
+}
+.vision-guard { font-size: 12.5px; color: var(--muted); margin-top: 14px; }
+
+@media (max-width: 720px) { .founder-grid { grid-template-columns: 1fr; } .founder-photo .fp-img { max-width: 190px; } }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+  .marquee { animation: none; }
+}
+
+@media (max-width: 900px) {
+  nav.main-nav { display: none; }
+  .hamburger { display: block; }
+  .footer-inner { padding: 48px 0 32px; }
+}
+
+/* ============================================================
+   EBEN FOUNDRY — PHASE 2 STYLES
+   Builder wizard · System reveal · Marketing Studio · WhatsApp CTA
+   ============================================================ */
+
+/* ---------- Builder wizard ---------- */
+.bstage { max-width: 840px; margin: 0 auto; }
+.step-track { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 18px; }
+.step-dot {
+  font-size: 9px; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase;
+  color: var(--muted); padding: 7px 12px; border: 1px solid var(--line);
+  border-radius: 999px; transition: color 0.3s, border-color 0.3s;
+}
+.step-dot.done { color: var(--green); border-color: var(--green); }
+.step-dot.now { color: var(--gold); border-color: var(--gold); }
+
+.bstep {
+  display: none; border: 1px solid var(--line); border-radius: var(--radius);
+  background: linear-gradient(180deg, var(--ivory-2) 0%, var(--ivory) 100%);
+  padding: clamp(24px, 5vw, 52px);
+}
+.bstep.active { display: block; animation: stepIn 0.45s var(--ease) both; }
+@keyframes stepIn { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+
+.q-kicker { margin-bottom: 6px; }
+.q-title { font-family: var(--font-display); font-size: clamp(22px, 4vw, 30px); letter-spacing: 0.01em; margin-bottom: 8px; }
+.q-hint { color: var(--muted); font-size: 14px; margin-bottom: 20px; max-width: 560px; }
+
+.binput {
+  width: 100%; font: inherit; font-size: 16px; color: var(--ink);
+  background: var(--ivory); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 14px 16px; transition: border-color 0.25s, box-shadow 0.25s;
+}
+.binput:focus { outline: none; border-color: var(--gold); box-shadow: 0 0 0 3px var(--gold-faint); }
+
+.chip-row { display: flex; flex-wrap: wrap; gap: 10px; }
+.chip {
+  font: inherit; font-size: 13px; font-weight: 600; color: var(--ink);
+  background: var(--ivory); border: 1px solid var(--line); border-radius: 999px;
+  padding: 11px 18px; cursor: pointer; transition: all 0.25s var(--ease);
+}
+.chip:hover { border-color: var(--gold); transform: translateY(-1px); }
+.chip.on { background: var(--green); border-color: var(--green); color: var(--ivory); }
+
+.model-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.model-card {
+  font: inherit; text-align: left; cursor: pointer;
+  background: var(--ivory); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 22px; transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+.model-card:hover { transform: translateY(-2px); }
+.model-card.on { border-color: var(--green); box-shadow: 0 12px 30px rgba(30, 48, 38, 0.14); }
+.model-card .mc-name { font-family: var(--font-display); font-size: 20px; font-weight: 600; letter-spacing: 0.04em; margin: 8px 0; }
+.model-card .mc-desc { color: var(--muted); font-size: 13px; line-height: 1.55; }
+.model-card .suggest {
+  display: inline-block; font-size: 9px; font-weight: 700; letter-spacing: 0.26em; text-transform: uppercase;
+  color: var(--gold); border: 1px solid var(--gold-soft); border-radius: 999px; padding: 5px 10px; margin-bottom: 10px;
+}
+
+.nav-row { display: flex; justify-content: space-between; gap: 12px; margin-top: 28px; flex-wrap: wrap; }
+.nav-row .spacer { flex: 1; }
+
+/* ---------- System reveal ---------- */
+.reveal-head { text-align: center; margin-bottom: 30px; }
+.reveal-head .biz { font-family: var(--font-display); font-size: clamp(28px, 6vw, 52px); font-weight: 600; letter-spacing: 0.02em; margin-top: 10px; }
+.reveal-meta { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 14px; }
+.meta-pill {
+  font-size: 10px; font-weight: 700; letter-spacing: 0.24em; text-transform: uppercase;
+  border: 1px solid var(--line); border-radius: 999px; padding: 8px 16px; color: var(--muted);
+}
+.meta-pill.gold { color: var(--gold); border-color: var(--gold-soft); }
+
+.engine-chain { display: flex; flex-direction: column; align-items: center; margin: 26px 0 8px; }
+.chain-node {
+  border: 1px solid var(--line); background: var(--ivory-2); border-radius: 999px;
+  padding: 11px 26px; font-size: 11px; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase;
+  color: var(--ink); opacity: 0; transform: translateY(10px); animation: chainIn 0.5s var(--ease) forwards;
+}
+.chain-node.gold { border-color: var(--gold-soft); color: var(--gold); }
+@keyframes chainIn { to { opacity: 1; transform: none; } }
+.chain-arrow { color: var(--gold); font-size: 13px; line-height: 1; margin: 7px 0; opacity: 0; animation: chainIn 0.4s forwards; }
+
+.journey-line { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 8px; margin: 18px 0 6px; }
+.j-node {
+  font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase;
+  background: var(--ivory-2); border: 1px solid var(--line); border-radius: 999px; padding: 8px 14px;
+}
+.j-arrow { color: var(--gold); font-size: 12px; }
+
+/* ---------- Recommendation ---------- */
+.rec-wrap { text-align: center; margin-top: 38px; }
+.rec-lead { color: var(--muted); font-size: 14px; max-width: 520px; margin: 0 auto 22px; }
+.rec-card {
+  position: relative; border: 1px solid var(--gold-soft); border-radius: var(--radius);
+  background: var(--ivory); padding: clamp(24px, 5vw, 40px); text-align: center;
+  box-shadow: 0 18px 50px rgba(38, 36, 30, 0.1); animation: stepIn 0.55s var(--ease) 0.2s both;
+}
+.rec-badge {
+  position: absolute; top: -13px; left: 50%; transform: translateX(-50%);
+  background: var(--gold); color: var(--charcoal); font-size: 10px; font-weight: 700;
+  letter-spacing: 0.28em; text-transform: uppercase; padding: 6px 16px; border-radius: 999px;
+}
+.rec-pkg { font-family: var(--font-display); font-size: clamp(26px, 5vw, 36px); font-weight: 600; margin: 14px 0 4px; }
+.rec-tier { color: var(--muted); font-size: 13px; margin-bottom: 18px; }
+.rec-pricing { display: grid; gap: 14px; max-width: 400px; margin: 0 auto 6px; text-align: left; }
+.rec-row { border: 1px solid var(--line); border-radius: var(--radius); padding: 14px 18px; background: var(--ivory-2); }
+.price-label {
+  font-size: 9px; font-weight: 700; letter-spacing: 0.26em; text-transform: uppercase;
+  color: var(--muted); margin-bottom: 3px;
+}
+.price-amount { font-family: var(--font-display); font-size: 24px; font-weight: 600; }
+.price-amount small { font-family: var(--font-body); font-size: 12px; color: var(--muted); font-weight: 500; }
+.rec-features { text-align: left; margin: 20px auto 0; max-width: 460px; }
+.rec-features h4 { font-size: 11px; font-weight: 700; letter-spacing: 0.24em; text-transform: uppercase; color: var(--gold); margin-bottom: 12px; }
+.rec-features ul { list-style: none; }
+.rec-features li { padding: 7px 0 7px 22px; position: relative; font-size: 14px; border-bottom: 1px solid var(--line-light); }
+.rec-features li:last-child { border-bottom: none; }
+.rec-features li::before { content: "—"; position: absolute; left: 0; color: var(--green); }
+.pay-note { font-size: 12px; color: var(--muted); margin-top: 16px; }
+
+/* ---------- Foundry moment ---------- */
+.foundry-moment {
+  margin-top: 46px; background: var(--charcoal); color: var(--ivory);
+  border-radius: var(--radius); text-align: center;
+  padding: clamp(44px, 8vw, 84px) clamp(20px, 5vw, 60px);
+  animation: stepIn 0.6s var(--ease) 0.35s both;
+}
+.fm-kicker { color: var(--gold); font-size: 11px; font-weight: 700; letter-spacing: 0.3em; text-transform: uppercase; margin-bottom: 18px; }
+.fm-pre { color: var(--ivory); opacity: 0.75; font-size: 15px; max-width: 520px; margin: 0 auto 22px; }
+.fm-big { font-family: var(--font-display); font-size: clamp(28px, 6vw, 56px); font-weight: 600; letter-spacing: 0.02em; line-height: 1.15; }
+.fm-big .gold { color: var(--gold); }
+.fm-quote { color: var(--ivory); opacity: 0.72; font-size: 14px; max-width: 560px; margin: 22px auto 0; font-style: italic; }
+
+.reveal-ctas { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 30px; }
+
+/* ---------- Marketing studio ---------- */
+.flow-strip { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 8px; }
+.flow-node {
+  font-size: 10px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase;
+  border: 1px solid var(--line); background: var(--ivory-2); border-radius: 999px;
+  padding: 9px 16px; color: var(--ink);
+}
+.flow-node.hot { border-color: var(--gold-soft); color: var(--gold); }
+.flow-arrow { color: var(--green); font-size: 12px; }
+
+.studio-grid { display: grid; grid-template-columns: minmax(300px, 380px) 1fr; gap: 24px; align-items: start; }
+.studio-form .field { margin-bottom: 14px; }
+.studio-form label { display: block; font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
+.studio-form input[type="text"], .studio-form select {
+  width: 100%; font: inherit; font-size: 14px; color: var(--ink); background: var(--ivory);
+  border: 1px solid var(--line); border-radius: var(--radius); padding: 12px 14px;
+}
+.studio-form input[type="text"]:focus, .studio-form select:focus { outline: none; border-color: var(--gold); }
+.col-pick { display: flex; gap: 12px; }
+.col-pick .cp { flex: 1; display: flex; align-items: center; gap: 8px; border: 1px solid var(--line); border-radius: var(--radius); padding: 8px 10px; background: var(--ivory); }
+.col-pick input[type="color"] { width: 34px; height: 34px; border: none; background: none; cursor: pointer; padding: 0; }
+.col-pick span { font-size: 10px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); }
+
+.studio-out { animation: stepIn 0.5s var(--ease) both; }
+.concept-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; margin-top: 22px; }
+.concept-card { border: 1px solid var(--line); border-radius: var(--radius); background: var(--ivory); padding: 24px; }
+.concept-card h4 { font-family: var(--font-display); font-size: 18px; font-weight: 600; margin-bottom: 8px; }
+.concept-card p { font-size: 13.5px; color: var(--ink); }
+.concept-card .why {
+  margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--line-light);
+  font-size: 12px; color: var(--muted);
+}
+.concept-card .why strong { color: var(--green); letter-spacing: 0.06em; text-transform: uppercase; font-size: 10px; }
+
+.creative-mock {
+  max-width: 270px; margin: 22px auto 6px; border-radius: 12px; padding: 22px 20px;
+  display: flex; flex-direction: column; gap: 14px; box-shadow: 0 18px 44px rgba(38, 36, 30, 0.18);
+}
+.creative-mock .cm-brand { font-size: 10px; font-weight: 700; letter-spacing: 0.3em; text-transform: uppercase; }
+.creative-mock .cm-head { font-family: var(--font-display); font-size: 22px; font-weight: 600; line-height: 1.2; }
+.creative-mock .cm-body { font-size: 12px; opacity: 0.85; line-height: 1.5; }
+.creative-mock .cm-cta {
+  align-self: flex-start; font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase;
+  border-radius: 999px; padding: 10px 18px;
+}
+.micro { font-size: 11.5px; color: var(--muted); margin-top: 12px; }
+
+/* ---------- WhatsApp floating CTA ---------- */
+.wa-fab {
+  position: fixed; right: 18px; bottom: 18px; z-index: 90;
+  display: inline-flex; align-items: center; gap: 9px;
+  background: var(--green); color: var(--ivory); border-radius: 999px;
+  padding: 13px 20px; font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase;
+  text-decoration: none; box-shadow: 0 12px 34px rgba(30, 48, 38, 0.35);
+  transition: transform 0.25s var(--ease), background 0.25s;
+}
+.wa-fab:hover { transform: translateY(-2px); background: var(--green-2); color: var(--ivory); }
+.wa-fab svg { width: 15px; height: 15px; fill: currentColor; flex: none; }
+
+/* ---------- Pricing phase-2 refinements ---------- */
+.tier-line { font-size: 13px; font-weight: 600; color: var(--gold); margin-bottom: 10px; }
+.pay-block { border-top: 1px solid var(--line); margin-top: 16px; padding-top: 16px; }
+.pay-row { margin-bottom: 12px; }
+.pay-row .price-label { margin-bottom: 2px; }
+.pay-row .price-amount { font-family: var(--font-display); font-size: 22px; font-weight: 600; }
+.pay-row .price-amount small { font-family: var(--font-body); font-size: 12px; color: var(--muted); font-weight: 500; }
+.pay-note-line { font-size: 11.5px; color: var(--muted); margin-top: 6px; }
+.pay-options-line { font-size: 12px; font-weight: 600; color: var(--green); margin-top: 12px; }
+
+.info-note {
+  display: none; margin-top: 10px; font-size: 12.5px; color: var(--ink);
+  border-left: 2px solid var(--gold); padding: 8px 12px; background: var(--ivory-2); border-radius: 0 var(--radius) var(--radius) 0;
+}
+.info-note.show { display: block; animation: stepIn 0.4s var(--ease) both; }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 720px) {
+  .model-grid { grid-template-columns: 1fr; }
+  .studio-grid { grid-template-columns: 1fr; }
+  .nav-row .btn { flex: 1; text-align: center; }
+  .wa-fab { right: 14px; bottom: 14px; padding: 13px 16px; }
+  .wa-fab .wa-txt { display: none; }
+  .wa-fab::after { content: "Talk to us"; font-size: 11px; font-weight: 700; letter-spacing: 0.1em; }
+  .rec-pricing { text-align: left; }
+  .step-track { gap: 4px; }
+  .step-dot { padding: 6px 9px; letter-spacing: 0.16em; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bstep.active, .chain-node, .chain-arrow, .rec-card, .foundry-moment, .studio-out { animation: none; opacity: 1; transform: none; }
+}
+
+</style>
+</head>
+<body>
+<a class="skip-link" href="#app">Skip to content</a>
+<!-- ================= HEADER ================= -->
+<header>
+  <div class="wrap header-inner">
+    <a class="brand" href="#/home" data-route="home">
+      <span class="brand-mark">EBEN<span class="gold">.</span></span>
+      <span class="brand-sub">Foundry</span>
+    </a>
+    <nav class="main-nav" aria-label="Primary">
+      <a href="#/home" data-route="home">Home</a>
+      <a href="#/engine" data-route="engine">Solutions</a>
+      <a href="#/business" data-route="business">Packages</a>
+      <a href="#/experience" data-route="experience">Experience</a>
+      <a href="#/builder" data-route="builder">Builder</a>
+      <a href="#/studio" data-route="studio">Studio</a>
+      <a href="#/nexus" data-route="nexus">Nexus</a>
+      <a class="nav-cta" href="#/builder" data-route="builder">Build Your Growth System</a>
+    </nav>
+    <button class="hamburger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#/home" data-route="home">Home</a>
+    <a href="#/engine" data-route="engine">Solutions</a>
+    <a href="#/business" data-route="business">Packages</a>
+    <a href="#/experience" data-route="experience">Experience</a>
+    <a href="#/builder" data-route="builder">Builder</a>
+    <a href="#/studio" data-route="studio">Studio</a>
+    <a href="#/nexus" data-route="nexus">Nexus</a>
+    <a href="#/builder" data-route="builder">Build Your Growth System</a>
+  </div>
+</header>
+
+<main id="app" tabindex="-1">
+
+<!-- ================= HOME ================= -->
+<section class="page" id="page-home" data-page="home">
+<div class="gateway-hero">
+    <div class="gateway-frame" id="gatewayFrame">
+      <svg class="gw-sparkle" width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0 L14.2 9.8 L24 12 L14.2 14.2 L12 24 L9.8 14.2 L0 12 L9.8 9.8 Z" fill="currentColor"/></svg>
+      <p class="gw-pick">Pick a Letter</p>
+      <p class="gw-tagline">One Engine.<br>Many Business Models.</p>
+      <svg class="gw-sparkle" width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0 L14.2 9.8 L24 12 L14.2 14.2 L12 24 L9.8 14.2 L0 12 L9.8 9.8 Z" fill="currentColor"/></svg>
+      <div class="gw-letters" role="group" aria-label="EBEN gateway — select a letter to enter a section">
+        <button class="eben-letter" data-label="Engine" data-goto="enter-e1" aria-label="E for Engine — Solutions and growth systems">E</button>
+        <button class="eben-letter accent" data-label="Business" data-goto="enter-b" aria-label="B for Business — Packages and commercial models">B</button>
+        <button class="eben-letter" data-label="Experience" data-goto="enter-e2" aria-label="E for Experience — Capabilities and proof">E</button>
+        <button class="eben-letter" data-label="Nexus" data-goto="enter-n" aria-label="N for Nexus — Company, vision and contact">N</button>
+      </div>
+      <div class="gw-doors" aria-hidden="true">
+        <span class="gw-door"></span>
+        <span class="gw-door open"></span>
+        <span class="gw-door"></span>
+        <span class="gw-door"></span>
+      </div>
+      <p class="gateway-caption">The letters are one architecture. Enter through whichever door matters to <em>you</em> — the conventional menu is always here too.</p>
+      <div class="gw-divider" aria-hidden="true"></div>
+      <p class="gw-cta"><span class="gw-click">Click</span><span class="gw-tap">Tap</span> a letter to enter</p>
+      <svg class="gw-hand" width="30" height="30" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 12.5V4.5a1.5 1.5 0 0 1 3 0v6M12 10.5V3a1.5 1.5 0 0 1 3 0v7.5M15 10.5V5a1.5 1.5 0 0 1 3 0v9.5M18 12V9a1.5 1.5 0 0 1 3 0v6.5c0 3.6-2.9 6.5-6.5 6.5h-1c-2.1 0-4.1-.9-5.4-2.6L5.3 15c-.6-.8-.4-1.9.4-2.5.7-.5 1.7-.4 2.3.2L9 14" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="hero gateway-intro">
+      <p class="kicker">Eben Foundry</p>
+      <h2 class="display">Turn your business into a growth system.</h2>
+      <p class="hero-statement lead">AI automation, digital marketing and business growth infrastructure designed around how your business actually acquires, converts and retains customers.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#/builder" data-route="builder">Build Your Growth System</a>
+        <a class="btn btn-outline" href="#/experience" data-route="experience">Explore What We Build</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="engine-strip" aria-hidden="true">
+    <div class="marquee" id="marquee"></div>
+  </div>
+
+  <div class="wrap">
+    <div class="section text-center" style="border:1px solid var(--gold-soft); border-radius:var(--radius); background:linear-gradient(180deg,var(--ivory-2),var(--ivory)); padding:clamp(28px,6vw,52px);">
+      <p class="kicker">Interactive — New</p>
+      <h2 class="display section-title" style="font-size:clamp(24px,4.5vw,36px);">Don't browse packages. Build your system.</h2>
+      <p class="lead mt-1" style="margin:0 auto;max-width:560px;">Answer six questions and watch the engine configure itself around your business — in your industry's language, with your recommended starting architecture.</p>
+      <a class="btn btn-primary mt-3" href="#/builder" data-route="builder" style="display:inline-block;">Build Your Growth System</a>
+    </div>
+
+    <div class="section text-center">
+      <p class="kicker">The Commercial Journey</p>
+      <div class="journey-rail" id="homeJourney"></div>
+    </div>
+
+    <div class="section">
+      <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+        <div class="card">
+          <p class="num">01</p>
+          <h3>What we solve</h3>
+          <p>Growth that depends on luck, hustle or memory. Businesses that attract attention but cannot reliably capture, qualify, convert and keep customers.</p>
+        </div>
+        <div class="card">
+          <p class="num">02</p>
+          <h3>What we build</h3>
+          <p>Proprietary growth infrastructure — connected acquisition, conversion and retention systems, custom-built around how your business actually earns.</p>
+        </div>
+        <div class="card dark">
+          <p class="num">03</p>
+          <h3>What you experience</h3>
+          <p>A business that runs as a system: visibility into your pipeline, follow-up that never sleeps, and performance you can measure.</p>
+        </div>
+      </div>
+      <div class="note">Eben Foundry designs growth infrastructure around your business model — not a generic playbook. Explore <a href="#/engine" data-route="engine">Solutions</a> or go straight to <a href="#/business" data-route="business">Packages &amp; Pricing</a>.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ENTER (letter transition) ================= -->
+<section class="page" id="page-enter" data-page="enter" aria-label="Entering an EBEN section">
+  <div class="enter-screen">
+    <div class="enter-head">
+      <a class="enter-back" href="#/home" id="enterBack" aria-label="Back to letter selection">←</a>
+      <a class="enter-brand" href="#/home" data-route="home">EBEN <span class="thin">FOUNDRY</span></a>
+    </div>
+    <div class="enter-progress" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+    <div class="enter-body" id="enterBody">
+      <span class="enter-letter" id="enterLetter">E</span>
+      <p class="enter-label">Entering</p>
+      <h2 class="enter-word" id="enterWord">ENTERPRISE</h2>
+      <figure class="enter-vista">
+        <img id="enterImg" src="assets/enter-e1.jpg" alt="Classical archway opening onto a sunlit horizon" />
+      </figure>
+      <a class="btn btn-gold enter-cta" id="enterGo" href="#/engine">ENTER →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ENGINE / SOLUTIONS ================= -->
+<section class="page" id="page-engine" data-page="engine">
+  <div class="wrap">
+    <p class="kicker">E — Engine</p>
+    <h1 class="display page-title">Growth systems, not generic marketing.</h1>
+    <p class="lead mt-2">Every business earns differently. Eben Foundry builds one proprietary growth engine and configures it around the way your business actually makes money — so the system fits the economics, not the other way around.</p>
+
+    <div class="section grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+      <div class="card dark">
+        <p class="kicker" style="color: var(--gold-soft);">High-Ticket Growth Systems</p>
+        <h3>For businesses where each lead can represent substantial revenue.</h3>
+        <ul>
+          <li>Lead generation &amp; customer acquisition</li>
+          <li>Lead intelligence &amp; qualification</li>
+          <li>Appointment &amp; consultation conversion</li>
+          <li>Disciplined follow-up systems</li>
+          <li>Sales pipeline &amp; conversion visibility</li>
+          <li>Retention &amp; client development</li>
+        </ul>
+        <p class="mt-2" style="font-size:13px;">Typical contexts: Real Estate · Law · Automotive · Construction · Professional Services</p>
+      </div>
+      <div class="card">
+        <p class="kicker">Low-Ticket / High-Frequency Systems</p>
+        <h3>For businesses where volume, frequency and repeat behaviour matter.</h3>
+        <ul>
+          <li>Offers &amp; campaign systems</li>
+          <li>Customer acquisition at pace</li>
+          <li>Bookings &amp; orders made effortless</li>
+          <li>Reminders &amp; re-engagement</li>
+          <li>Loyalty &amp; repeat-customer structure</li>
+          <li>Campaign measurement</li>
+        </ul>
+        <p class="mt-2" style="font-size:13px;">Typical contexts: Salon &amp; Beauty · Gym &amp; Fitness · Restaurant · Retail / E-commerce</p>
+      </div>
+      <div class="card">
+        <p class="kicker">A Different Model?</p>
+        <h3>The system follows your economics — not an industry stereotype.</h3>
+        <p>A salon with premium packages may behave like a high-ticket business. A construction supplier may live on volume. Your configuration is chosen from how your business earns, and you can move between models as your economics change.</p>
+        <p class="mt-2" style="font-size:13px;">If your industry isn't listed, we run a commercial assessment and architect around your description.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <p class="kicker">The Engine, Configured</p>
+      <h2 class="display section-title mt-1">Customer-facing journeys, by industry.</h2>
+      <p class="lead mt-2">These are the journeys your customers experience. The infrastructure underneath is proprietary — what matters to you is that the journey is designed, deliberate and measurable.</p>
+      <div class="pill-row" id="industryPills"></div>
+      <div id="industryDetail">
+        <div class="card">
+          <p class="kicker" id="indName"></p>
+          <h3 id="indTitle"></h3>
+          <p id="indDesc" class="mt-1"></p>
+          <div class="mt-2" id="indProblems"></div>
+          <div class="mt-3">
+            <p class="kicker">Example customer journey</p>
+            <div class="journey-visual" id="indJourney"></div>
+          </div>
+        </div>
+      </div>
+      <div class="cta-row mt-3" style="justify-content:flex-start;">
+        <a class="btn btn-primary" href="#/business" data-route="business">See Packages &amp; Pricing</a>
+        <a class="btn btn-gold" href="#/nexus" data-route="nexus">Discuss Your Growth System</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BUSINESS / PACKAGES ================= -->
+<section class="page" id="page-business" data-page="business">
+  <div class="wrap">
+    <p class="kicker">B — Business</p>
+    <h1 class="display page-title">Engagement, structured.</h1>
+    <p class="lead mt-2">Implementation builds your system. The retainer keeps it winning. Two commercial commitments, two different jobs — we're clear about both.</p>
+
+    <div class="section impl-retainer">
+      <div class="ir-box">
+        <h4>Implementation (once-off)</h4>
+        <p>Covers designing and standing up your growth system:</p>
+        <ul>
+          <li>Strategy &amp; commercial assessment</li>
+          <li>System architecture</li>
+          <li>Setup, configuration &amp; deployment</li>
+          <li>Launch</li>
+        </ul>
+      </div>
+      <div class="ir-box">
+        <h4>Retainer (monthly)</h4>
+        <p>Covers the ongoing work that compounds results:</p>
+        <ul>
+          <li>Campaigns &amp; ongoing optimization</li>
+          <li>Automation maintenance</li>
+          <li>Reporting &amp; performance visibility</li>
+          <li>Support &amp; growth work</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section">
+      <p class="kicker">Configure Your System</p>
+      <h2 class="display section-title mt-1">Pricing, built around your industry.</h2>
+      <p class="lead mt-2">Select your industry. The engine configures itself — model, capabilities, journey and commercial structure.</p>
+      <div class="pill-row" id="pricingIndustryPills"></div>
+      <div class="pay-toggle" id="payToggle">
+        <button class="pay-opt active" data-pay="full">
+          <div class="pay-opt-title">Pay in Full</div>
+          <div class="pay-opt-desc">Single implementation payment at engagement</div>
+        </button>
+        <button class="pay-opt" data-pay="installment">
+          <div class="pay-opt-title">2-Part Implementation</div>
+          <div class="pay-opt-desc">Begin at 50%, balance at the agreed deployment milestone</div>
+        </button>
+      </div>
+      <div id="pricingPackages" class="grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));"></div>
+      <div id="otherIndustry" style="display:none;">
+        <div class="card dark">
+          <p class="kicker" style="color: var(--gold-soft);">Custom Architecture</p>
+          <h3>Designed around your business model.</h3>
+          <p>Your industry isn't a template — so your pricing isn't one either. We start with a commercial assessment of how your business earns, then architect the system and its commercial structure around that reality.</p>
+          <div class="price-actions mt-2">
+            <a class="btn btn-gold" href="#/nexus" data-route="nexus" style="border-color: var(--gold-soft);">Request a Commercial Assessment</a>
+          </div>
+        </div>
+      </div>
+      <p class="installment-note" id="installmentNote"></p>
+      <div class="note">All figures in South African Rand (ZAR), excluding applicable taxes. Larger engagements can be structured with a custom payment schedule — this is a professional engagement, and we'll agree the milestones before we begin.</div>
+    </div>
+
+    <div class="section">
+      <p class="kicker">Optional Add-Ons</p>
+      <h2 class="display section-title mt-1">Extend the system as you grow.</h2>
+      <p class="lead mt-2 mb-2">Every system is built to expand. Add-ons are quoted per configuration — we don't publish technical implementation costs before understanding your setup.</p>
+      <div class="grid" id="addonGrid" style="grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EXPERIENCE ================= -->
+<section class="page" id="page-experience" data-page="experience">
+  <div class="wrap">
+    <p class="kicker">E — Experience</p>
+    <h1 class="display page-title">What the engine looks like, in your hands.</h1>
+    <p class="lead mt-2">Eben Foundry is a young company with deep infrastructure. Where proof is still being built, we show you what we build and how it works — never invented results.</p>
+
+    <div class="section grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+      <div class="card">
+        <p class="kicker">Selected Capabilities</p>
+        <h3>What's inside a configured system</h3>
+        <ul>
+          <li>Connected acquisition &amp; conversion systems</li>
+          <li>AI-assisted decision support</li>
+          <li>Custom-built workflows for your model</li>
+          <li>Intelligent automation across the journey</li>
+          <li>Performance visibility &amp; reporting</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Demonstration</p>
+        <h3>See your industry, configured</h3>
+        <p>The Solutions section demonstrates how the engine configures itself around a business model — problems, capabilities, journey and packages change with the industry you select.</p>
+        <a class="btn btn-outline mt-2" href="#/engine" data-route="engine" style="align-self:flex-start;">Open Solutions</a>
+      </div>
+      <div class="card">
+        <p class="kicker">Pilot Framework</p>
+        <h3>Prove it before you scale it</h3>
+        <p>Where it makes commercial sense, engagements begin with a scoped pilot: a focused implementation that demonstrates the system working in your business before the full architecture is committed.</p>
+        <a class="btn btn-outline mt-2" href="#/nexus" data-route="nexus" style="align-self:flex-start;">Discuss a Pilot</a>
+      </div>
+    </div>
+
+    <div class="section">
+      <p class="kicker">How We Work</p>
+      <h2 class="display section-title mt-1">From assessment to operating system.</h2>
+      <div class="grid mt-3" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+        <div class="card"><p class="num">01 — Assess</p><h3>Commercial assessment</h3><p>We study how your business actually earns, where customers drop away, and which model fits your economics.</p></div>
+        <div class="card"><p class="num">02 — Architect</p><h3>System design</h3><p>Your growth system is designed around your model — the components, the journeys and the commercial structure.</p></div>
+        <div class="card"><p class="num">03 — Build &amp; Launch</p><h3>Implementation</h3><p>Configuration, deployment and launch of your system, with payment structured to agreed milestones.</p></div>
+        <div class="card dark"><p class="num">04 — Compound</p><h3>Ongoing optimization</h3><p>Campaigns, maintenance, reporting and strategic growth work — the retainer's job is to keep the system winning.</p></div>
+      </div>
+    </div>
+
+    <div class="cta-row mt-3" style="justify-content:flex-start;">
+      <a class="btn btn-primary" href="#/business" data-route="business">Build Your Growth System</a>
+      <a class="btn btn-gold" href="#/nexus" data-route="nexus">Discuss Your Growth System</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BUILDER — BUILD YOUR GROWTH SYSTEM ================= -->
+<section class="page" id="page-builder" data-page="builder">
+  <div class="wrap">
+    <p class="kicker">E — Engine · Interactive</p>
+    <h1 class="display page-title">Build your growth system.</h1>
+    <p class="lead mt-2">Six questions. Watch the system configure itself around your business — the journey, the language, and the most appropriate starting architecture. No jargon. No generic menus.</p>
+
+    <div class="section bstage" id="builderStage">
+      <div class="step-track" id="stepTrack" aria-hidden="true"></div>
+
+      <div class="bstep" data-step="1">
+        <p class="kicker q-kicker">Step 1 of 6</p>
+        <h2 class="q-title">Select your industry</h2>
+        <p class="q-hint">The system speaks your business's language from here on.</p>
+        <div class="pill-row" id="bIndPills" style="margin-top:0;"></div>
+      </div>
+
+      <div class="bstep" data-step="2">
+        <p class="kicker q-kicker">Step 2 of 6</p>
+        <h2 class="q-title">What's your business called?</h2>
+        <p class="q-hint">Your name is only used to configure and present your system.</p>
+        <input class="binput" id="b-business" type="text" aria-label="Business name" placeholder="e.g. Mtshali Property Group" maxlength="60" autocomplete="organization" />
+      </div>
+
+      <div class="bstep" data-step="3">
+        <p class="kicker q-kicker">Step 3 of 6</p>
+        <h2 class="q-title">What do you sell?</h2>
+        <p class="q-hint">One line is enough — the main thing your customers pay for.</p>
+        <input class="binput" id="b-sells" type="text" aria-label="What do you sell" placeholder="e.g. Residential property sales in the upper market" maxlength="120" />
+      </div>
+
+      <div class="bstep" data-step="4">
+        <p class="kicker q-kicker">Step 4 of 6</p>
+        <h2 class="q-title">Who is your customer?</h2>
+        <p class="q-hint">The person the system should be built to win and keep.</p>
+        <input class="binput" id="b-customer" type="text" aria-label="Who is your customer" placeholder="e.g. Serious buyers and sellers in Gauteng" maxlength="120" />
+      </div>
+
+      <div class="bstep" data-step="5">
+        <p class="kicker q-kicker">Step 5 of 6</p>
+        <h2 class="q-title">What's your biggest growth problem?</h2>
+        <p class="q-hint">Select everything that applies — this shapes your recommended starting architecture.</p>
+        <div class="chip-row" id="bChips"></div>
+      </div>
+
+      <div class="bstep" data-step="6">
+        <p class="kicker q-kicker">Step 6 of 6</p>
+        <h2 class="q-title">How does your business earn?</h2>
+        <p class="q-hint">We've suggested the model your industry typically runs on — you know your business best, so override it if needed.</p>
+        <div class="model-grid">
+          <button type="button" class="model-card" id="bModelHigh" data-model="high">
+            <span class="suggest" style="display:none;">Suggested for your industry</span>
+            <span class="mc-name">HIGH-TICKET</span>
+            <span class="mc-desc">Substantial revenue per customer. Fewer, bigger transactions — the system is built around qualification, deliberate follow-up and conversion.</span>
+          </button>
+          <button type="button" class="model-card" id="bModelLow" data-model="low">
+            <span class="suggest" style="display:none;">Suggested for your industry</span>
+            <span class="mc-name">LOW-TICKET / HIGH-FREQUENCY</span>
+            <span class="mc-desc">Volume and repeat behaviour. Many transactions at lower value — the system is built around capture, speed and repeat purchase journeys.</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="bstep" data-step="7" id="revealStep"></div>
+
+      <div class="nav-row" id="bNavRow">
+        <button type="button" class="btn btn-outline" id="bBack" style="visibility:hidden;">← Back</button>
+        <span class="spacer"></span>
+        <button type="button" class="btn btn-primary" id="bNext">Continue →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MARKETING STUDIO ================= -->
+<section class="page" id="page-studio" data-page="studio">
+  <div class="wrap">
+    <p class="kicker">E — Experience · Marketing Studio</p>
+    <h1 class="display page-title">Marketing is the front door to your growth system.</h1>
+    <p class="lead mt-2">Your marketing should not exist separately from your sales system. Attention should end in conversion — and conversion should feed retention. This studio demonstrates how we think.</p>
+
+    <div class="section text-center">
+      <p class="kicker">The Connected Journey</p>
+      <div class="flow-strip" id="flowStrip"></div>
+    </div>
+
+    <div class="section studio-grid">
+      <div class="card studio-form">
+        <p class="kicker">Studio Inputs</p>
+        <h3 style="margin-bottom:16px;">Tell the studio about your business</h3>
+        <div class="field"><label for="s-name">Business name</label><input type="text" id="s-name" placeholder="e.g. Sipho &amp; Sons Auto" maxlength="60" /></div>
+        <div class="field"><label for="s-industry">Industry</label><select id="s-industry"></select></div>
+        <div class="field">
+          <label>Brand colours</label>
+          <div class="col-pick">
+            <div class="cp"><input type="color" id="s-colA" value="#1E3026" /><span>Primary</span></div>
+            <div class="cp"><input type="color" id="s-colB" value="#CDB075" /><span>Accent</span></div>
+          </div>
+        </div>
+        <div class="field"><label for="s-product">Product / service</label><input type="text" id="s-product" placeholder="e.g. Pre-owned vehicles, trade-ins &amp; finance" maxlength="120" /></div>
+        <div class="field"><label for="s-offer">Your offer</label><input type="text" id="s-offer" placeholder="e.g. Free valuation + finance pre-check" maxlength="120" /></div>
+        <div class="field"><label for="s-target">Target customer</label><input type="text" id="s-target" placeholder="e.g. First-time buyers with trade-ins" maxlength="120" /></div>
+        <div class="field"><label for="s-cta">Call to action</label><input type="text" id="s-cta" placeholder="e.g. Book my free valuation" maxlength="80" /></div>
+        <button type="button" class="btn btn-primary mt-2" id="studioGo" style="width:100%;">Generate Campaign Concept</button>
+        <p class="micro">A live demonstration of how your marketing connects to the system. Nothing is sent anywhere.</p>
+      </div>
+
+      <div id="studioOut" style="display:none;"></div>
+    </div>
+
+    <div class="cta-row mt-3" style="justify-content:flex-start;">
+      <a class="btn btn-primary" href="#/builder" data-route="builder">Build the System Behind This</a>
+      <a class="btn btn-gold" href="#/nexus" data-route="nexus">Discuss This Concept</a>
+    </div>
+  </div>
+</section>
+
+<!-- Floating WhatsApp CTA (all pages) -->
+<a class="wa-fab" id="waFab" href="#" target="_blank" rel="noopener" aria-label="Talk to Eben Foundry on WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm5.83 14.12c-.25.7-1.45 1.33-2.01 1.38-.56.06-1.09.25-3.66-.94-3.09-1.43-4.98-4.7-5.13-4.9-.15-.2-1.19-1.75-1.13-3.29.06-1.54.87-2.28 1.18-2.58.31-.3.66-.36.88-.36h.63c.2 0 .47-.07.72.56.25.63.85 2.17.93 2.33.08.15.13.33.02.53-.1.2-.15.32-.3.5-.15.18-.32.4-.45.53-.15.15-.31.31-.13.61.18.3.79 1.27 1.69 2.05 1.16 1.01 2.13 1.33 2.43 1.48.3.15.48.13.65-.08.18-.2.75-.86.95-1.16.2-.3.4-.25.68-.15.28.1 1.76.83 2.06.98.3.15.5.23.58.36.07.13.07.76-.18 1.46z"/></svg>
+  <span class="wa-txt">Talk to Eben Foundry</span>
+</a>
+
+<!-- ================= NEXUS ================= -->
+<section class="page" id="page-nexus" data-page="nexus">
+  <div class="wrap">
+    <p class="kicker">N — Nexus</p>
+    <h1 class="display page-title">The company behind the engine.</h1>
+    <p class="lead mt-2">Eben Foundry exists for one reason: ambitious businesses shouldn't have to choose between marketing that looks good and systems that actually earn. We build the infrastructure that makes growth deliberate.</p>
+
+    <div class="section grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+      <div class="card">
+        <p class="kicker">Vision</p>
+        <h3>Deliberate growth</h3>
+        <p>A world where serious businesses grow by design — where acquisition, conversion and retention are engineered, measured and continuously improved.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">Company</p>
+        <h3>What we hold ourselves to</h3>
+        <ul>
+          <li>Outcome-oriented work — never empty activity</li>
+          <li>Honest commercial language — no guarantees we can't stand behind</li>
+          <li>Systems that respect how your business actually earns</li>
+          <li>Long-term partnership over one-off projects</li>
+        </ul>
+      </div>
+      <div class="card dark">
+        <p class="kicker" style="color: var(--gold-soft);">Working with us</p>
+        <h3>A serious B2B engagement</h3>
+        <p>We work with SMEs, established businesses, professional firms and institutional clients who are ready to treat growth as infrastructure — not a monthly experiment.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <p class="kicker">Founder &amp; CEO</p>
+      <div class="founder-grid mt-2">
+        <figure class="founder-photo">
+          <img src="assets/founder-sinethemba-mtshali.jpg?v=5" alt="Sinethemba Mtshali, Founder and CEO of Eben Foundry" loading="lazy" width="800" height="1000" class="fp-img" />
+          <figcaption>Sinethemba Mtshali — Founder &amp; Chief Executive Officer, Eben Foundry</figcaption>
+        </figure>
+        <div class="founder-bio">
+          <h3>Building the infrastructure ambitious businesses deserve.</h3>
+          <p class="mt-2">Sinethemba founded Eben Foundry on a simple observation: serious businesses in South Africa are routinely sold disconnected services — a website here, an ad campaign there — when what they actually need is a system. One connected engine, configured around how they earn.</p>
+          <p class="mt-2">Eben Foundry exists to make that engineering accessible: growth infrastructure that was once the privilege of large corporates, built deliberately for ambitious small and medium businesses — automation, marketing and commercial systems working as one machine.</p>
+          <p class="mt-2">The work is guided by building, systems thinking and economic participation: businesses that become visible, connected and economically actionable strengthen the communities around them. That is the point of the whole exercise.</p>
+          <p class="founder-quote">"We don't sell digital services. We build the system a business grows on."</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <p class="kicker">Where we are going</p>
+      <div class="vision-panel mt-2">
+        <h3 style="font-size:clamp(20px,4vw,28px);">A long-term vision: businesses and communities that are visible, connected and economically actionable.</h3>
+        <p class="mt-2">Eben Foundry's long-term direction is an economic opportunity network — a future where underserved businesses and communities can be discovered, engaged and transacted with as first-class participants in the economy, supported by the same growth infrastructure we build today.</p>
+        <p class="mt-2">That is a vision, not a current product. Today, the commercial priority is exactly what it says across this website: designing, building and operating growth systems for real businesses.</p>
+        <p class="vision-guard">We state it plainly because direction matters — and because we would rather show you what exists than promise what doesn't.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <p class="kicker">The Solutions Lab</p>
+      <div class="card" style="border-color:var(--gold-soft); display:flex; flex-wrap:wrap; gap:18px; align-items:center; justify-content:space-between;">
+        <div style="max-width:620px;">
+          <h3>Eben Foundry Summit Experience</h3>
+          <p>Explore the Solutions Lab — a separate interactive demonstration of how growth infrastructure behaves in practice. It is a showcase experience, not the corporate website, and it is the best way to feel the philosophy in motion.</p>
+        </div>
+        <a class="btn btn-outline" href="https://eben-foundry-summit.vercel.app/#/home" target="_blank" rel="noopener" style="border-color:var(--gold-soft); align-self:center;">Explore the Summit Experience</a>
+      </div>
+    </div>
+
+    <div class="section">
+      <p class="kicker">Lead Capture</p>
+      <h2 class="display section-title mt-1">Discuss your growth system.</h2>
+      <p class="lead mt-2 mb-3">Tell us about your business. We'll respond with a genuine commercial point of view on what a growth system for your model would involve.</p>
+
+      <form id="leadForm" novalidate>
+        <div class="form-grid">
+          <div class="field"><label for="f-name">Full name <span class="req">*</span></label><input id="f-name" name="full_name" type="text" autocomplete="name" required /><p class="error">Please enter your full name.</p></div>
+          <div class="field"><label for="f-business">Business name</label><input id="f-business" name="business_name" type="text" autocomplete="organization" /></div>
+          <div class="field"><label for="f-email">Email <span class="req">*</span></label><input id="f-email" name="email" type="email" autocomplete="email" required /><p class="error">Please enter a valid email address.</p></div>
+          <div class="field"><label for="f-phone">Phone / WhatsApp</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" /></div>
+          <div class="field"><label for="f-industry">Industry <span class="req">*</span></label><select id="f-industry" name="industry" required></select><p class="error">Please select your industry.</p></div>
+          <div class="field"><label for="f-model">Business model</label><select id="f-model" name="business_model">
+            <option value="">Let Eben Foundry assess this</option>
+            <option value="high-ticket">High-ticket — substantial revenue per customer</option>
+            <option value="low-ticket">Low-ticket / high-frequency — volume &amp; repeat behaviour</option>
+            <option value="other">Not sure / mixed</option>
+          </select></div>
+          <div class="field"><label for="f-interest">Service interest</label><select id="f-interest" name="service_interest">
+            <option value="">Select an area of interest</option>
+            <option value="growth-system">Complete growth system</option>
+            <option value="lead-generation">Lead generation &amp; customer acquisition</option>
+            <option value="conversion">Conversion &amp; booking systems</option>
+            <option value="retention">Retention &amp; repeat business</option>
+            <option value="automation">Automation &amp; AI systems</option>
+            <option value="assessment">Commercial assessment</option>
+          </select></div>
+          <div class="field"><label for="f-budget">Approximate budget</label><select id="f-budget" name="budget">
+            <option value="">Select a range</option>
+            <option value="under-10k">Under R10,000</option>
+            <option value="10k-25k">R10,000 – R25,000</option>
+            <option value="25k-50k">R25,000 – R50,000</option>
+            <option value="50k-100k">R50,000 – R100,000</option>
+            <option value="100k-plus">R100,000+</option>
+            <option value="unsure">Not sure yet</option>
+          </select></div>
+          <p class="info-note" id="budgetNote">Your current requirement may be better suited to a focused starting system. We can scope the right entry point — no budget is dismissed.</p>
+          <div class="field"><label for="f-timeline">Desired timeline</label><select id="f-timeline" name="timeline">
+            <option value="">Select a timeline</option>
+            <option value="immediately">Immediately</option>
+            <option value="1-3-months">Within 1–3 months</option>
+            <option value="3-6-months">Within 3–6 months</option>
+            <option value="planning">Planning ahead / next quarter</option>
+          </select></div>
+          <div class="field"><label for="f-challenge">Current challenge</label><input id="f-challenge" name="current_challenge" type="text" placeholder="e.g. leads, follow-up, repeat business, visibility" /></div>
+          <div class="field"><label for="f-outcome">Desired outcome</label><input id="f-outcome" name="desired_outcome" type="text" placeholder="e.g. consistent qualified enquiries every month" /></div>
+          <div class="field full"><label for="f-message">Message</label><textarea id="f-message" name="message" placeholder="Tell us about your business and what you're trying to achieve."></textarea></div>
+          <div class="field full">
+            <div class="consent-row">
+              <input type="checkbox" id="f-consent" name="consent" required />
+              <label for="f-consent">I consent to Eben Foundry contacting me about my enquiry and storing these details only for that purpose, in line with South Africa's POPIA principles. <span class="req">*</span></label>
+            </div>
+            <p class="error" id="consentError">Please confirm consent so we can respond to your enquiry.</p>
+          </div>
+        </div>
+        <div class="cta-row mt-3" style="justify-content:flex-start;">
+          <button type="submit" class="btn btn-primary" id="leadSubmit">Discuss Your Growth System</button>
+          <a class="btn btn-gold" id="whatsappBtn" style="display:none;" target="_blank" rel="noopener">WhatsApp Us Directly</a>
+          <a class="btn btn-outline" href="mailto:ebenfoundry@protonmail.com?subject=Growth%20system%20enquiry" style="display:none;" id="emailBtn">Or email us directly</a>
+        </div>
+        <p class="info-note" id="handoffNote"></p>
+        <div class="section" style="padding:18px 0 0; border-top:1px solid var(--line); margin-top:22px;">
+          <p class="kicker">What happens next</p>
+          <p style="font-size:13.5px; color:var(--muted); max-width:640px;">We review your enquiry properly, then come back to you with a genuine commercial point of view — usually within one business day. If there's a fit, the next step is a scoping conversation; if there isn't, we'll tell you that honestly too.</p>
+        </div>
+        <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="wrap">
+    <div class="footer-inner">
+      <div>
+        <p class="footer-brand">EBEN<span class="gold">.</span> FOUNDRY</p>
+        <p>Growth infrastructure for ambitious businesses. One engine, configured around how your business actually earns.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Engine</h5>
+        <a href="#/home" data-route="home">Home</a>
+        <a href="#/engine" data-route="engine">Solutions</a>
+        <a href="#/business" data-route="business">Packages &amp; Pricing</a>
+        <a href="#/experience" data-route="experience">Experience</a>
+      </div>
+      <div class="footer-col">
+        <h5>Nexus</h5>
+        <a href="#/nexus" data-route="nexus">Company &amp; Vision</a>
+        <a href="#/nexus" data-route="nexus">Contact</a>
+        <a href="#/nexus" data-route="nexus">Discuss Your Growth System</a>
+      </div>
+    </div>
+    <div class="footer-base">
+      <span>© <span id="year"></span> Eben Foundry. All rights reserved.</span>
+      <span><a href="mailto:ebenfoundry@protonmail.com" style="text-decoration:none;">ebenfoundry@protonmail.com</a></span>
+      <span>Built as a growth system. Operated as one.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ============================================================
+   EBEN FOUNDRY — CENTRALIZED CONFIGURATION
+   All commercial data lives here. Edit this block to update
+   the site — never scatter values into the UI.
+   ============================================================ */
+
+const CONFIG = {
+
+  /* ---------- CONTACT ---------- */
+  contact: {
+    // Fill in to enable the "WhatsApp us directly" button on the enquiry form.
+    // Format: country code + number, no spaces or symbols. e.g. "27821234567"
+    whatsapp: "27747534679",
+    email: "ebenfoundry@protonmail.com"
+  },
+
+  /* ---------- SUMMIT EXPERIENCE (separate demo property) ---------- */
+  summitUrl: "https://eben-foundry-summit.vercel.app/#/home",
+
+  /* ---------- LEAD CAPTURE BACKEND ---------- */
+  // Endpoint receives validated enquiries and stores them securely.
+  leadEndpoint: "https://vesper.base44.app/functions/captureEbenLead",
+
+  /* ---------- CTA LABELS ---------- */
+  ctas: {
+    primary: "Build Your Growth System",
+    secondary: "Explore What We Build",
+    enquiry: "Discuss Your Growth System"
+  },
+
+  /* ---------- GROWTH STAGES (engine strip + journey rail) ---------- */
+  commercialJourney: ["Attract", "Capture", "Convert", "Retain", "Measure", "Optimize"],
+  marqueeWords: [
+    "One Engine", "Many Business Models", "AI Automation", "Digital Marketing",
+    "Lead Generation", "Qualification", "Follow-Up Systems", "Customer Acquisition",
+    "Conversion Systems", "Retention Systems", "Growth Strategy", "Business Readiness",
+    "Custom Business Systems", "Analytics & Performance"
+  ],
+
+  /* ---------- MODELS ---------- */
+  models: {
+    high: {
+      name: "High-Ticket Growth System",
+      stageJourney: ["Lead Generation", "Lead Capture", "Qualification", "Booking", "Follow-Up", "Conversion", "Retention", "Measurement"],
+      packageNames: ["Foundry Entry", "System Forge", "Market Command"],
+      packageBadges: ["01", "02", "03"]
+    },
+    low: {
+      name: "Low-Ticket / High-Frequency System",
+      stageJourney: ["Acquisition", "Offer", "Booking / Order", "Customer Capture", "Reminder", "Retention", "Repeat Visit", "Measurement"],
+      packageNames: ["Signal", "Momentum", "Dominance"],
+      packageBadges: ["01", "02", "03"]
+    }
+  },
+
+  /* ---------- INDUSTRIES ----------
+     model: "high" | "low" — but users can override in the form.
+     Prices are set per industry below in PRICING.
+  */
+  industries: [
+    {
+      id: "real-estate", name: "Real Estate", model: "high",
+      title: "Property interest that converts into signed opportunities.",
+      desc: "High-value transactions with long decision cycles. The system is built around capturing serious buyers and sellers, qualifying them, and keeping every opportunity warm.",
+      problems: ["Inconsistent lead flow", "Serious buyers lost to slow follow-up", "No visibility on which marketing produces closings"],
+      journey: ["Property Enquiry", "Qualification", "Viewing", "Follow-Up", "Opportunity"]
+    },
+    {
+      id: "law", name: "Law", model: "high",
+      title: "Enquiries screened into consultations with the right matters.",
+      desc: "Professional firms live and die by qualified, relevant enquiries. The system filters, routes and follows up so consultations happen with the right clients.",
+      problems: ["Enquiries that don't match practice areas", "Missed consultations from slow response", "No structured follow-up after first contact"],
+      journey: ["Legal Enquiry", "Case Qualification", "Consultation", "Follow-Up", "Client Conversion"]
+    },
+    {
+      id: "automotive", name: "Automotive", model: "high",
+      title: "Showroom traffic and serious buyers, managed end to end.",
+      desc: "Large ticket sizes and comparison-heavy buyers. The system keeps interested buyers engaged from first enquiry through test drive and negotiation.",
+      problems: ["Lead leakage between enquiry and showroom", "Cold follow-up on hot buyers", "Unclear campaign performance"],
+      journey: ["Vehicle Interest", "Qualification", "Finance / Trade-In Intent", "Appointment", "Follow-Up", "Sale"]
+    },
+    {
+      id: "construction", name: "Construction", model: "high",
+      title: "Projects pipeline built on qualified enquiries.",
+      desc: "Long cycles, large contracts, relationship-driven decisions. The system captures and nurtures genuine project opportunities.",
+      problems: ["Tire-kickers consuming quote capacity", "No pipeline visibility", "Referral dependency instead of deliberate acquisition"],
+      journey: ["Project Enquiry", "Scope", "Qualification", "Consultation", "Proposal", "Follow-Up"]
+    },
+    {
+      id: "professional-services", name: "Professional Services", model: "high",
+      title: "A steady, credible flow of the right kind of client.",
+      desc: "Consultancies, agencies and specialist firms that sell expertise. The system builds authority into acquisition so engagements begin warm.",
+      problems: ["Feast-or-famine pipeline", "Wrong-fit clients", "Expertise invisible online"],
+      journey: ["Enquiry", "Qualification", "Consultation", "Proposal", "Conversion"]
+    },
+    {
+      id: "salon-beauty", name: "Salon & Beauty", model: "low",
+      title: "Chairs full, and clients who keep coming back.",
+      desc: "Frequency and loyalty decide the economics. The system drives bookings, reduces no-shows, and turns one visit into a repeat relationship.",
+      problems: ["Empty slots mid-week", "No-shows and late cancellations", "Clients who don't rebook"],
+      journey: ["Offer", "Booking", "Reminder", "Visit", "Rebooking"]
+    },
+    {
+      id: "gym-fitness", name: "Gym & Fitness", model: "low",
+      title: "Members joining — and members staying.",
+      desc: "Acquisition and retention both matter. The system runs joined-up campaigns for sign-ups and ongoing journeys that keep members active.",
+      problems: ["Seasonal join-and-quit cycles", "No structured win-back", "Campaigns that can't be measured"],
+      journey: ["Offer", "Trial / Enquiry", "Booking", "Visit", "Membership", "Retention"]
+    },
+    {
+      id: "restaurant", name: "Restaurant", model: "low",
+      title: "Covers up on quiet nights, regulars for life.",
+      desc: "VOLUME business with rhythm — busy peaks, quiet valleys. The system runs offers and campaigns that fill the quiet times and build repeat visit behaviour.",
+      problems: ["Quiet mid-week trade", "One-off diners who never return", "No owned audience to market to"],
+      journey: ["Campaign", "Offer", "Reservation / Order", "Visit", "Repeat"]
+    },
+    {
+      id: "retail-ecommerce", name: "Retail / E-commerce", model: "low",
+      title: "Traffic, conversion and repeat purchase as one machine.",
+      desc: "Volume plus frequency plus order value. The system connects campaigns to conversion and repeat purchase behaviour.",
+      problems: ["Traffic that doesn't convert", "No repeat-purchase structure", "Ad spend without performance visibility"],
+      journey: ["Discovery", "Product Interest", "Purchase", "Follow-Up", "Repeat"]
+    },
+    {
+      id: "other", name: "Other", model: "custom",
+      title: "Custom architecture. Designed around your business model.",
+      desc: "Your industry isn't a template. Describe your business and we run a commercial assessment — the engine, the journey and the commercial structure are then designed around how you actually earn.",
+      problems: ["Models that don't fit standard categories", "Mixed high-ticket and volume revenue", "Complex or emerging business structures"],
+      journey: ["Assessment", "System Design", "Architecture", "Launch", "Optimization"]
+    }
+  ],
+
+  /* ---------- PRICING (ZAR) ----------
+     Edit here only. The UI never hard-codes a price.
+     Each: [onceOff, monthly]
+  */
+  pricing: {
+    "high": {
+      "real-estate":            { "Foundry Entry": [22500, 5500], "System Forge": [45000, 9500], "Market Command": [85000, 18000] },
+      "law":                    { "Foundry Entry": [25000, 6000], "System Forge": [50000, 10000], "Market Command": [90000, 18000] },
+      "automotive":             { "Foundry Entry": [20000, 5000], "System Forge": [40000, 8500], "Market Command": [75000, 15000] },
+      "construction":           { "Foundry Entry": [25000, 6000], "System Forge": [50000, 10000], "Market Command": [95000, 18000] },
+      "professional-services":  { "Foundry Entry": [22500, 5500], "System Forge": [45000, 9500], "Market Command": [80000, 16000] }
+    },
+    "low": {
+      "salon-beauty":     { "Signal": [9500, 2500], "Momentum": [18500, 4500], "Dominance": [32500, 7500] },
+      "gym-fitness":      { "Signal": [12500, 3000], "Momentum": [25000, 5500], "Dominance": [45000, 9500] },
+      "restaurant":       { "Signal": [10000, 2500], "Momentum": [20000, 4500], "Dominance": [35000, 7500] },
+      "retail-ecommerce": { "Signal": [15000, 3500], "Momentum": [30000, 6500], "Dominance": [55000, 11000] }
+    }
+  },
+
+  /* ---------- PACKAGE CONTENT ---------- */
+  packages: {
+    high: [
+      {
+        name: "Foundry Entry", badge: "01", tag: "Foundation",
+        positioning: "For businesses establishing a serious growth foundation.",
+        promise: "Your business acquires and follows up like a system, not like a person juggling.",
+        features: [
+          "Growth assessment",
+          "Foundational digital marketing setup",
+          "Lead & customer capture",
+          "Essential automation",
+          "Core campaign setup",
+          "Conversion-focused landing experience",
+          "Basic follow-up structure",
+          "Basic reporting"
+        ]
+      },
+      {
+        name: "System Forge", badge: "02", tag: "Most chosen", featured: true,
+        positioning: "For businesses ready to connect acquisition, conversion and automation.",
+        promise: "The engine takes over qualification, conversion and pipeline — deliberately, not occasionally.",
+        features: [
+          "Everything in Foundry Entry",
+          "Deeper automation",
+          "Qualification & conversion workflows",
+          "Multi-channel campaign system",
+          "Enhanced follow-up",
+          "Booking & customer journey integration",
+          "Reporting & optimization",
+          "Ongoing strategic optimization"
+        ]
+      },
+      {
+        name: "Market Command", badge: "03", tag: "Partnership",
+        positioning: "For businesses requiring deeper custom growth infrastructure and ongoing strategic partnership.",
+        promise: "A custom growth architecture operated as a strategic partnership with your business.",
+        features: [
+          "Everything in System Forge",
+          "Custom growth architecture",
+          "Advanced automation",
+          "Multi-channel campaign strategy",
+          "Advanced lead & customer journeys",
+          "Deeper analytics",
+          "Priority support",
+          "Custom integrations where appropriate",
+          "Strategic growth partnership"
+        ]
+      }
+    ],
+    low: [
+      {
+        name: "Signal", badge: "01", tag: "Foundation",
+        positioning: "For businesses establishing a serious growth foundation.",
+        promise: "Offers, capture and reminders working together — volume starts behaving like a system.",
+        features: [
+          "Growth assessment",
+          "Foundational marketing setup",
+          "Offer & core campaign setup",
+          "Customer capture",
+          "Essential automation & reminders",
+          "Conversion-focused booking / order experience",
+          "Basic reporting",
+          "Re-engagement structure"
+        ]
+      },
+      {
+        name: "Momentum", badge: "02", tag: "Most chosen", featured: true,
+        positioning: "For businesses ready to connect acquisition, conversion and automation.",
+        promise: "Campaigns across channels, loyalty structure and ongoing optimization compounding together.",
+        features: [
+          "Everything in Signal",
+          "Deeper automation",
+          "Campaign system across multiple channels",
+          "Enhanced follow-up & reminders",
+          "Loyalty & repeat-customer structure",
+          "Booking / customer journey integration",
+          "Reporting & ongoing optimization",
+          "Ongoing strategic optimization"
+        ]
+      },
+      {
+        name: "Dominance", badge: "03", tag: "Partnership",
+        positioning: "For businesses requiring deeper custom growth infrastructure and ongoing strategic partnership.",
+        promise: "The full engine, custom-architected and operated as a strategic partnership.",
+        features: [
+          "Everything in Momentum",
+          "Custom growth architecture",
+          "Advanced automation",
+          "Full multi-channel campaign strategy",
+          "Advanced customer journeys & loyalty",
+          "Deeper analytics",
+          "Priority support",
+          "Custom integrations where appropriate",
+          "Strategic growth partnership"
+        ]
+      }
+    ]
+  },
+
+  /* ---------- ADD-ONS ----------
+     pricing: null → show "Priced on configuration".
+     pricing: "From R____" → shown as "From R____" until configured.
+     To price an add-on later, replace the string with a real figure, e.g. "From R2,500".
+  */
+  addons: [
+    { name: "Additional campaign", desc: "A further campaign running inside your system.", price: null },
+    { name: "Additional landing experience", desc: "Another conversion-focused destination.", price: null },
+    { name: "Additional automation workflow", desc: "Extend the system with a further workflow.", price: null },
+    { name: "CRM integration", desc: "Connect the engine to your CRM.", price: null },
+    { name: "WhatsApp integration", desc: "Meet customers where they already talk.", price: null },
+    { name: "Email automation", desc: "Structured email journeys.", price: null },
+    { name: "Advanced analytics", desc: "Deeper performance visibility.", price: null },
+    { name: "Additional business location", desc: "Extend the system to another location.", price: null },
+    { name: "Additional brand / offer configuration", desc: "Run a second brand or offer set.", price: null },
+    { name: "Custom integration", desc: "Connect a system you already rely on.", price: null },
+    { name: "Ongoing content / creative production", desc: "Content and creative made for the system.", price: null },
+    { name: "Paid advertising management", desc: "Managed acquisition across ad platforms.", price: null },
+    { name: "Additional consultation / strategy sessions", desc: "More strategic time on your business.", price: null }
+  ]
+};
+
+/* ---------- helpers over CONFIG ---------- */
+const fmt = n => "R" + String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+
+function getIndustry(id) {
+  return CONFIG.industries.find(i => i.id === id) || CONFIG.industries[0];
+}
+/* ============================================================
+   EBEN FOUNDRY — APPLICATION
+   Routing, gateway, industry configuration, pricing, lead form.
+   ============================================================ */
+
+(function () {
+  "use strict";
+
+  /* ---------------- Router ---------------- */
+  const ROUTES = ["home", "engine", "business", "experience", "builder", "studio", "nexus",
+                  "enter-e1", "enter-b", "enter-e2", "enter-n"];
+
+  /* Letter transition states — the architectural entrance into each section.
+     Destinations reuse the existing routes: nothing else changes. */
+  const ENTER = {
+    "enter-e1": { letter: "E", pos: 0, word: "ENTERPRISE", dest: "engine",
+                  img: "assets/enter-e1.jpg",
+                  alt: "Classical archway opening onto a sunlit horizon of hills and mountains" },
+    "enter-b":  { letter: "B", pos: 1, word: "BUILDING", dest: "business",
+                  img: "assets/enter-b.jpg",
+                  alt: "Emerald double doors opening onto a spiral staircase rising into warm light" },
+    "enter-e2": { letter: "E", pos: 2, word: "ECOSYSTEM", dest: "experience",
+                  img: "assets/enter-e2.jpg",
+                  alt: "Colonnade opening onto a sunlit courtyard with a single olive tree" },
+    "enter-n":  { letter: "N", pos: 3, word: "NETWORK", dest: "nexus",
+                  img: "assets/enter-n.jpg",
+                  alt: "Emerald doors opening onto a balcony overlooking a lakeside town and mountains" }
+  };
+
+  function currentRoute() {
+    const h = (location.hash || "#/home").replace("#/", "").split("?")[0];
+    return ROUTES.includes(h) ? h : "home";
+  }
+
+  function renderEnter(route) {
+    const cfg = ENTER[route];
+    if (!cfg) return;
+    document.getElementById("enterLetter").textContent = cfg.letter;
+    document.getElementById("enterWord").textContent = cfg.word;
+    const img = document.getElementById("enterImg");
+    img.src = cfg.img;
+    img.alt = cfg.alt;
+    document.getElementById("enterGo").href = "#/" + cfg.dest;
+    document.querySelectorAll(".enter-progress i").forEach((seg, i) =>
+      seg.classList.toggle("on", i === cfg.pos));
+    const body = document.getElementById("enterBody");
+    body.classList.remove("entering");
+    void body.offsetWidth; /* restart the entrance animation */
+    body.classList.add("entering");
+  }
+
+  function navigate() {
+    const route = currentRoute();
+    const page = route.indexOf("enter-") === 0 ? "enter" : route;
+    document.querySelectorAll(".page").forEach(p => p.classList.toggle("active", p.dataset.page === page));
+    if (page === "enter") renderEnter(route);
+    document.querySelectorAll("nav.main-nav a, .mobile-menu a").forEach(a => {
+      a.classList.toggle("active", a.dataset.route === route && !a.classList.contains("nav-cta"));
+    });
+    document.querySelector(".mobile-menu").classList.remove("open");
+    document.querySelector(".hamburger").classList.remove("open");
+    document.querySelector(".hamburger").setAttribute("aria-expanded", "false");
+    window.scrollTo({ top: 0, behavior: "auto" });
+  }
+
+  window.addEventListener("hashchange", navigate);
+
+  document.querySelector(".hamburger").addEventListener("click", function () {
+    const menu = document.getElementById("mobileMenu");
+    const open = menu.classList.toggle("open");
+    this.classList.toggle("open", open);
+    this.setAttribute("aria-expanded", open);
+  });
+
+  /* ---------------- Interactive EBEN gateway ---------------- */
+  Object.keys(ENTER).forEach(k => { const pre = new Image(); pre.src = ENTER[k].img; });
+  const frame = document.getElementById("gatewayFrame");
+  document.querySelectorAll(".eben-letter").forEach(letter => {
+    letter.addEventListener("click", () => {
+      const target = letter.dataset.goto;
+      frame.classList.add("selecting");
+      frame.querySelectorAll(".eben-letter").forEach(l => l.classList.toggle("selected", l === letter));
+      setTimeout(() => {
+        location.hash = "#/" + target;
+        setTimeout(() => {
+          frame.classList.remove("selecting");
+          frame.querySelectorAll(".eben-letter").forEach(l => l.classList.remove("selected"));
+        }, 420);
+      }, 430);
+    });
+  });
+
+  /* ---------------- Marquee & journey rail ---------------- */
+  const words = CONFIG.marqueeWords.map(w => "<span>" + w + "</span>").join("");
+  document.getElementById("marquee").innerHTML = words + words;
+
+  function railHTML(steps) {
+    return steps.map((s, i) =>
+      '<span class="rail-step">' + s + "</span>" +
+      (i < steps.length - 1 ? '<span class="rail-arrow">→</span>' : "")
+    ).join("");
+  }
+  document.getElementById("homeJourney").innerHTML = railHTML(CONFIG.commercialJourney.map(s => s.toUpperCase()));
+
+  /* ---------------- Industry selector (Solutions) ---------------- */
+  let selectedIndustry = "real-estate";
+
+  function buildIndustryPills(containerId, onPick, activeId) {
+    const el = document.getElementById(containerId);
+    el.innerHTML = "";
+    CONFIG.industries.forEach(ind => {
+      const b = document.createElement("button");
+      b.className = "pill" + (ind.id === activeId ? " active" : "");
+      b.textContent = ind.name;
+      b.setAttribute("data-industry", ind.id);
+      b.addEventListener("click", () => onPick(ind.id));
+      el.appendChild(b);
+    });
+  }
+
+  function renderIndustryDetail(id) {
+    const ind = getIndustry(id);
+    document.getElementById("indName").textContent = ind.name + (ind.model === "custom" ? " — Custom" : " — " + CONFIG.models[ind.model].name);
+    document.getElementById("indTitle").textContent = ind.title;
+    document.getElementById("indDesc").textContent = ind.desc;
+    document.getElementById("indProblems").innerHTML =
+      '<p class="kicker">Growth problems this configuration solves</p><ul style="list-style:none;margin-top:10px;">' +
+      ind.problems.map(p => '<li style="padding:8px 0 8px 22px;border-bottom:1px solid var(--line);position:relative;font-size:14px;">' +
+      '<span style="position:absolute;left:0;color:var(--gold);">—</span>' + p + "</li>").join("") + "</ul>";
+    document.getElementById("indJourney").innerHTML = railHTML(ind.journey);
+  }
+
+  function pickIndustry(id) {
+    selectedIndustry = id;
+    document.querySelectorAll("#industryPills .pill").forEach(p =>
+      p.classList.toggle("active", p.dataset.industry === id));
+    renderIndustryDetail(id);
+  }
+
+  buildIndustryPills("industryPills", pickIndustry, selectedIndustry);
+  renderIndustryDetail(selectedIndustry);
+
+  /* ---------------- Pricing (Business) ---------------- */
+  let pricingIndustry = "real-estate";
+  let payMode = "full"; // "full" | "installment"
+
+  function renderPricing() {
+    const ind = getIndustry(pricingIndustry);
+    const grid = document.getElementById("pricingPackages");
+    const other = document.getElementById("otherIndustry");
+    const note = document.getElementById("installmentNote");
+
+    if (ind.model === "custom") {
+      grid.innerHTML = "";
+      grid.style.display = "none";
+      other.style.display = "block";
+      note.textContent = "";
+      return;
+    }
+
+    grid.style.display = "grid";
+    other.style.display = "none";
+
+    const model = CONFIG.models[ind.model];
+    const prices = CONFIG.pricing[ind.model][ind.id];
+    const packages = CONFIG.packages[ind.model];
+
+    grid.innerHTML = packages.map((pkg, i) => {
+      const [onceOff, monthly] = prices[pkg.name];
+      const half = Math.ceil(onceOff / 2); // dynamic installment calculation — exact 50% split
+      const onceLine = payMode === "full"
+        ? fmt(onceOff) + ' <small>once-off</small>'
+        : fmt(half) + ' to begin <small>+ ' + fmt(onceOff - half) + " at the agreed deployment milestone</small>";
+      const customTerms = pkg.badge === "03"
+        ? '<p class="pay-note-line">Custom commercial structure available for this engagement.</p>' : "";
+      return (
+        '<div class="card price-card' + (pkg.featured ? " featured" : "") + '">' +
+        (pkg.featured ? '<span class="price-badge">' + pkg.tag + "</span>" : "") +
+        '<p class="num">' + model.packageBadges[i] + " — " + pkg.name.toUpperCase() + "</p>" +
+        "<h3>" + model.name + "</h3>" +
+        '<p class="tier-line">' + pkg.positioning + "</p>" +
+        '<p class="price-sub">' + pkg.promise + "</p>" +
+        '<div class="pay-block">' +
+        '<div class="pay-row"><p class="price-label">Implementation</p>' +
+        '<p class="price-amount">' + onceLine + "</p>" +
+        '<p class="pay-note-line">Once-off — design, configuration &amp; deployment of your system.</p></div>' +
+        '<div class="pay-row"><p class="price-label">Ongoing</p>' +
+        '<p class="price-amount">' + fmt(monthly) + ' <small>/ month</small></p>' +
+        '<p class="pay-note-line">Monthly retainer — optimization, support, campaigns &amp; system evolution.</p></div>' +
+        '<p class="pay-options-line">' +
+        (payMode === "full" ? "Pay in full, or select 2-Part Implementation above." : "2-part implementation shown — pay in full is also available.") +
+        "</p>" + customTerms + "</div>" +
+        "<ul>" + pkg.features.map(f => "<li>" + f + "</li>").join("") + "</ul>" +
+        '<div class="price-actions">' +
+        '<a class="btn btn-primary" href="#/nexus" data-route="nexus" data-pkg="' + pkg.name + '" data-ind="' + ind.id + '">Enquire — ' + pkg.name + "</a>" +
+        "</div></div>"
+      );
+    }).join("");
+
+    note.textContent = payMode === "installment"
+      ? "2-part implementation shown: begin at 50%, balance at the agreed deployment milestone. Exact milestones are agreed before work begins."
+      : "Switch to 2-Part Implementation to see the milestone payment option — calculated for every package.";
+  }
+
+  function pickPricingIndustry(id) {
+    pricingIndustry = id;
+    document.querySelectorAll("#pricingIndustryPills .pill").forEach(p =>
+      p.classList.toggle("active", p.dataset.industry === id));
+    renderPricing();
+  }
+
+  buildIndustryPills("pricingIndustryPills", pickPricingIndustry, pricingIndustry);
+
+  document.querySelectorAll("#payToggle .pay-opt").forEach(opt => {
+    opt.addEventListener("click", () => {
+      payMode = opt.dataset.pay;
+      document.querySelectorAll("#payToggle .pay-opt").forEach(o =>
+        o.classList.toggle("active", o === opt));
+      renderPricing();
+    });
+  });
+
+  renderPricing();
+
+  /* ---------------- Add-ons ---------------- */
+  document.getElementById("addonGrid").innerHTML = CONFIG.addons.map(a => {
+    const price = a.price === null ? "Priced on configuration" : a.price;
+    return (
+      '<div class="card"><h3 style="font-size:18px;">' + a.name + "</h3>" +
+      "<p>" + a.desc + "</p>" +
+      '<p class="mt-2" style="font-size:13px;font-weight:700;color:var(--gold);letter-spacing:0.06em;">' + price + "</p></div>"
+    );
+  }).join("");
+
+  /* ---------------- Footer year ---------------- */
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  /* ---------------- Enquiry form ---------------- */
+  const industrySelect = document.getElementById("f-industry");
+  industrySelect.innerHTML = '<option value="">Select your industry</option>' +
+    CONFIG.industries.map(i => '<option value="' + i.id + '">' + i.name + "</option>").join("") +
+    '<option value="other-other">My industry is not listed</option>';
+
+  const wa = CONFIG.contact.whatsapp;
+  if (wa) {
+    const btn = document.getElementById("whatsappBtn");
+    btn.style.display = "inline-block";
+    btn.href = "https://wa.me/" + wa;
+  }
+
+  const em = CONFIG.contact.email;
+  if (em) {
+    const ebtn = document.getElementById("emailBtn");
+    ebtn.style.display = "inline-block";
+  }
+
+  const form = document.getElementById("leadForm");
+  const status = document.getElementById("formStatus");
+
+  function setInvalid(input, invalid) {
+    input.closest(".field").classList.toggle("invalid", invalid);
+    return !invalid;
+  }
+
+  form.addEventListener("submit", async function (e) {
+    e.preventDefault();
+    status.className = "form-status";
+    status.textContent = "";
+
+    const data = {
+      full_name: document.getElementById("f-name").value.trim(),
+      business_name: document.getElementById("f-business").value.trim(),
+      email: document.getElementById("f-email").value.trim(),
+      phone: document.getElementById("f-phone").value.trim(),
+      industry: industrySelect.value,
+      business_model: document.getElementById("f-model").value,
+      service_interest: document.getElementById("f-interest").value,
+      current_challenge: document.getElementById("f-challenge").value.trim(),
+      budget: document.getElementById("f-budget").value,
+      timeline: document.getElementById("f-timeline").value,
+      message: (function () {
+        const m = document.getElementById("f-message").value.trim();
+        const o = document.getElementById("f-outcome").value.trim();
+        return o ? m + "\n\nDesired outcome: " + o : m;
+      })(),
+      consent: document.getElementById("f-consent").checked
+    };
+
+    let valid = true;
+    valid = setInvalid(document.getElementById("f-name"), data.full_name.length < 2) && valid;
+    valid = setInvalid(document.getElementById("f-email"), !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email)) && valid;
+    valid = setInvalid(industrySelect, !data.industry) && valid;
+    const consentOk = data.consent;
+    document.getElementById("consentError").style.display = consentOk ? "none" : "block";
+    if (!consentOk) valid = false;
+
+    if (!valid) {
+      const firstBad = form.querySelector(".field.invalid input, .field.invalid select");
+      if (firstBad) firstBad.focus();
+      return;
+    }
+
+    const submit = document.getElementById("leadSubmit");
+    submit.disabled = true;
+    submit.textContent = "Sending…";
+
+    try {
+      let ok = false;
+      if (CONFIG.leadEndpoint && CONFIG.leadEndpoint.indexOf("__") === -1) {
+        const res = await fetch(CONFIG.leadEndpoint, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(data)
+        });
+        ok = res.ok;
+      } else {
+        // Backend not yet configured — stage locally so no enquiry is lost.
+        try {
+          const staged = JSON.parse(localStorage.getItem("eben_staged_leads") || "[]");
+          staged.push(Object.assign({ staged_at: new Date().toISOString() }, data));
+          localStorage.setItem("eben_staged_leads", JSON.stringify(staged));
+        } catch (e) { /* storage unavailable */ }
+        ok = true;
+      }
+
+      if (ok) {
+        form.reset();
+        status.className = "form-status ok";
+        status.innerHTML = "<strong>Thank you — your enquiry has been received.</strong> We'll come back to you with a genuine commercial point of view on a growth system for your business." +
+          (wa ? ' Prefer WhatsApp? Use the <em>WhatsApp Us Directly</em> button.' : "");
+      } else {
+        throw new Error("Request failed");
+      }
+    } catch (err) {
+      status.className = "form-status err";
+      status.innerHTML = "<strong>Something went wrong sending your enquiry.</strong> Please try again in a moment" +
+        (wa ? ", or reach us directly on WhatsApp." : ".");
+    } finally {
+      submit.disabled = false;
+      submit.textContent = CONFIG.ctas.enquiry;
+    }
+  });
+
+  /* ---------------- Boot ---------------- */
+  if (!location.hash) location.hash = "#/home";
+  navigate();
+})();
+/* ============================================================
+   EBEN FOUNDRY — PHASE 2 APPLICATION
+   Builder wizard · System reveal · Recommendation ·
+   Marketing Studio · WhatsApp deep links · Form handoff.
+   Commercial data stays in CONFIG — this file only orchestrates.
+   ============================================================ */
+
+(function () {
+  "use strict";
+
+  const el = id => document.getElementById(id);
+
+  /* ---------------- Shared helpers ---------------- */
+  const WA_NUMBER = CONFIG.contact.whatsapp;
+  const WA_BASE = WA_NUMBER ? "https://wa.me/" + WA_NUMBER : "";
+  const WA_DEFAULT_MSG = "Hello Eben Foundry, I'd like to discuss a growth system for my business.";
+  const waLink = msg => WA_BASE + "?text=" + encodeURIComponent(msg || WA_DEFAULT_MSG);
+
+  const FAB = el("waFab");
+  if (FAB && WA_BASE) FAB.href = waLink(WA_DEFAULT_MSG);
+
+  // Prefill the WhatsApp button on the enquiry form with the standard message.
+  const formWa = el("whatsappBtn");
+  if (formWa && WA_BASE) formWa.href = waLink(WA_DEFAULT_MSG);
+
+  /* ============================================================
+     BUILDER — BUILD YOUR GROWTH SYSTEM
+     ============================================================ */
+  const B = {
+    step: 1,
+    industry: null,
+    business: "",
+    sells: "",
+    customer: "",
+    problems: [],
+    customProblem: "",
+    model: null
+  };
+  const STEPS_TOTAL = 6;
+  const STEP_LABELS = ["Industry", "Business", "Offer", "Customer", "Problem", "Model"];
+  const CORE_ENGINE = ["Attract", "Capture", "Qualify", "Book", "Follow Up", "Convert", "Measure"];
+
+  function renderTrack() {
+    el("stepTrack").innerHTML = STEP_LABELS.map((label, i) => {
+      const n = i + 1;
+      const cls = B.step > n || B.step === 7 ? "done" : B.step === n ? "now" : "";
+      return '<span class="step-dot ' + cls + '">' + n + " · " + label + "</span>";
+    }).join("");
+  }
+
+  function showStep(n) {
+    B.step = n;
+    document.querySelectorAll("#builderStage .bstep").forEach(s =>
+      s.classList.toggle("active", Number(s.dataset.step) === n));
+    renderTrack();
+    const back = el("bBack");
+    back.style.visibility = n === 1 || n === 7 ? "hidden" : "visible";
+    el("bNavRow").style.display = n === 7 ? "none" : "flex";
+    el("bNext").textContent = n === 6 ? "Configure My System →" : "Continue →";
+    clearErr();
+    const top = el("builderStage").getBoundingClientRect().top + window.scrollY - 90;
+    window.scrollTo({ top: top, behavior: "smooth" });
+  }
+
+  let errEl = null;
+  function showErr(msg) {
+    if (!errEl) {
+      errEl = document.createElement("p");
+      errEl.style.cssText = "width:100%;margin:14px 0 0;font-size:13px;color:#8a3324;font-weight:600;";
+      el("bNavRow").prepend(errEl);
+    }
+    errEl.textContent = msg;
+  }
+  function clearErr() { if (errEl) errEl.textContent = ""; }
+
+  /* ----- Step 1: industry pills ----- */
+  const pillsWrap = el("bIndPills");
+  CONFIG.industries.forEach(ind => {
+    const b = document.createElement("button");
+    b.type = "button";
+    b.className = "pill";
+    b.textContent = ind.name;
+    b.addEventListener("click", () => {
+      B.industry = ind.id;
+      pillsWrap.querySelectorAll(".pill").forEach(p => p.classList.toggle("active", p === b));
+      renderChips();
+      renderModelCards();
+      clearErr();
+    });
+    pillsWrap.appendChild(b);
+  });
+
+  /* ----- Step 5: adaptive problem chips ----- */
+  function renderChips() {
+    const wrap = el("bChips");
+    wrap.innerHTML = "";
+    if (!B.industry) return;
+    const ind = getIndustry(B.industry);
+    B.problems = [];
+    B.customProblem = "";
+    ind.problems.forEach(p => {
+      const c = document.createElement("button");
+      c.type = "button";
+      c.className = "chip";
+      c.textContent = p;
+      c.setAttribute("aria-pressed", "false");
+      c.addEventListener("click", () => {
+        const on = c.classList.toggle("on");
+        c.setAttribute("aria-pressed", on ? "true" : "false");
+        if (on) B.problems.push(p);
+        else B.problems = B.problems.filter(x => x !== p);
+        clearErr();
+      });
+      wrap.appendChild(c);
+    });
+    const other = document.createElement("button");
+    other.type = "button";
+    other.className = "chip";
+    other.textContent = "Something else";
+    other.setAttribute("aria-pressed", "false");
+    const inp = document.createElement("input");
+    inp.className = "binput";
+    inp.type = "text";
+    inp.placeholder = "Describe it in your own words…";
+    inp.maxLength = 120;
+    inp.style.cssText = "flex:1 1 220px;min-width:200px;display:none;";
+    other.addEventListener("click", () => {
+      const on = other.classList.toggle("on");
+      other.setAttribute("aria-pressed", on ? "true" : "false");
+      inp.style.display = on ? "block" : "none";
+      if (on) inp.focus(); else { B.customProblem = ""; inp.value = ""; }
+    });
+    inp.addEventListener("input", () => { B.customProblem = inp.value.trim(); });
+    wrap.appendChild(other);
+    wrap.appendChild(inp);
+  }
+
+  /* ----- Step 6: model cards with industry suggestion ----- */
+  function renderModelCards() {
+    const ind = B.industry ? getIndustry(B.industry) : null;
+    const high = el("bModelHigh"), low = el("bModelLow");
+    B.model = ind && (ind.model === "high" || ind.model === "low") ? ind.model : null;
+    high.classList.toggle("on", B.model === "high"); high.setAttribute("aria-pressed", B.model === "high");
+    low.classList.toggle("on", B.model === "low"); low.setAttribute("aria-pressed", B.model === "low");
+    high.querySelector(".suggest").style.display = ind && ind.model === "high" ? "inline-block" : "none";
+    low.querySelector(".suggest").style.display = ind && ind.model === "low" ? "inline-block" : "none";
+    [high, low].forEach(card => {
+      card.onclick = () => {
+        B.model = card.dataset.model;
+        high.classList.toggle("on", B.model === "high");
+        low.classList.toggle("on", B.model === "low");
+        clearErr();
+      };
+    });
+  }
+
+  /* ----- Step validation & progression ----- */
+  function validateStep() {
+    switch (B.step) {
+      case 1:
+        if (!B.industry) { showErr("Select your industry to continue."); return false; }
+        return true;
+      case 2:
+        B.business = el("b-business").value.trim();
+        if (B.business.length < 2) { showErr("Enter your business name — the system is configured around it."); return false; }
+        return true;
+      case 3:
+        B.sells = el("b-sells").value.trim();
+        if (!B.sells) { showErr("Tell us the main thing your customers pay for."); return false; }
+        return true;
+      case 4:
+        B.customer = el("b-customer").value.trim();
+        if (!B.customer) { showErr("Describe your customer in a few words."); return false; }
+        return true;
+      case 5:
+        if (!B.problems.length && !B.customProblem) { showErr("Select at least one growth problem."); return false; }
+        return true;
+      case 6:
+        if (!B.model) { showErr("Choose how your business earns — or trust the industry suggestion."); return false; }
+        return true;
+    }
+    return true;
+  }
+
+  el("bNext").addEventListener("click", () => {
+    if (!validateStep()) return;
+    if (B.step === 6) { renderReveal(); showStep(7); return; }
+    showStep(B.step + 1);
+  });
+  el("bBack").addEventListener("click", () => { if (B.step > 1 && B.step < 7) showStep(B.step - 1); });
+
+  /* ============================================================
+     SYSTEM REVEAL + RECOMMENDATION + FOUNDRY MOMENT
+     ============================================================ */
+  function complexityTier() {
+    const count = B.problems.length + (B.customProblem ? 1 : 0);
+    return count <= 1 ? 0 : count <= 3 ? 1 : 2;
+  }
+
+  function chainHTML() {
+    return '<div class="engine-chain">' + CORE_ENGINE.map((s, i) => {
+      const d = (i * 0.22).toFixed(2);
+      const arrow = i ? '<div class="chain-arrow" style="animation-delay:' + (i * 0.22 - 0.1).toFixed(2) + 's;">↓</div>' : "";
+      return arrow + '<div class="chain-node' + (i === 3 ? " gold" : "") + '" style="animation-delay:' + d + 's;">' + s + "</div>";
+    }).join("") + "</div>";
+  }
+
+  function journeyHTML(ind) {
+    if (ind.id === "other") {
+      return '<p style="color:var(--muted);font-size:13px;margin:16px 0 4px;">Custom journey — the stages are designed around how your business actually earns, after a commercial assessment.</p>';
+    }
+    const nodes = ind.journey.map(j => '<span class="j-node">' + j + "</span>").join('<span class="j-arrow">→</span>');
+    return '<div class="journey-line">' + nodes + "</div>";
+  }
+
+  function recommendationHTML(ind) {
+    // "Other" industries run on assessment — no invented prices.
+    if (ind.id === "other" || !CONFIG.pricing[B.model] || !CONFIG.pricing[B.model][ind.id]) {
+      return (
+        '<div class="rec-card">' +
+        '<span class="rec-badge">Your configuration</span>' +
+        '<p class="rec-pkg" style="font-size:clamp(20px,4vw,26px);">Commercial Assessment</p>' +
+        '<p class="rec-tier">Custom architecture, scoped around your business</p>' +
+        '<p style="color:var(--muted);font-size:14px;max-width:460px;margin:0 auto 18px;">Because your business doesn\'t fit a template, the engine, the journey and the commercial structure are designed after a commercial assessment — around how you actually earn.</p>' +
+        '<div class="reveal-ctas" style="margin-top:18px;">' +
+        '<button type="button" class="btn btn-primary" id="rvCtaForm">Request a Commercial Assessment</button>' +
+        "</div></div>"
+      );
+    }
+
+    const tier = complexityTier();
+    const pkg = CONFIG.packages[B.model][tier];
+    const price = CONFIG.pricing[B.model][ind.id][pkg.name];
+    const half = Math.ceil(price[0] / 2);
+    const customTerms = tier === 2
+      ? '<p class="pay-note">Custom commercial structure available for engagements at this level.</p>' : "";
+
+    return (
+      '<div class="rec-card">' +
+      '<span class="rec-badge">Recommended</span>' +
+      '<p class="rec-pkg">' + pkg.name + "</p>" +
+      '<p class="rec-tier">' + pkg.positioning + "</p>" +
+      '<div class="rec-pricing">' +
+      '<div class="rec-row"><p class="price-label">Implementation</p>' +
+      '<p class="price-amount">' + fmt(price[0]) + ' <small>once-off</small></p></div>' +
+      '<div class="rec-row"><p class="price-label">Ongoing</p>' +
+      '<p class="price-amount">' + fmt(price[1]) + ' <small>/ month</small></p></div>' +
+      "</div>" +
+      '<p class="pay-note">Or begin at ' + fmt(half) + " with the balance of " + fmt(price[0] - half) + " at the agreed deployment milestone.</p>" +
+      customTerms +
+      '<div class="rec-features"><h4>What\'s included</h4><ul>' +
+      pkg.features.map(f => "<li>" + f + "</li>").join("") +
+      "</ul></div>" +
+      '<div class="reveal-ctas" style="margin-top:26px;">' +
+      '<button type="button" class="btn btn-primary" id="rvCtaForm">Build This For My Business</button>' +
+      "</div></div>"
+    );
+  }
+
+  function renderReveal() {
+    const ind = getIndustry(B.industry);
+    const modelLabel = B.model === "high" ? "High-Ticket" : "Low-Ticket / High-Frequency";
+    const biz = B.business || "Your Business";
+    const challengeList = B.problems.concat(B.customProblem ? [B.customProblem] : []).join("; ");
+
+    const html =
+      '<div class="reveal-head">' +
+      '<p class="kicker q-kicker" style="margin-bottom:2px;">Configuration complete</p>' +
+      '<p class="kicker gold">Your Eben Foundry System</p>' +
+      '<p class="biz">' + escapeHTML(biz) + "</p>" +
+      '<div class="reveal-meta"><span class="meta-pill gold">Business model — ' + modelLabel + "</span>" +
+      '<span class="meta-pill">' + ind.name + "</span></div>" +
+      "</div>" +
+      '<p class="kicker" style="text-align:center;">Core Engine</p>' +
+      chainHTML() +
+      '<p class="kicker" style="text-align:center;margin-top:26px;">Configured for your journey — ' + ind.name + "</p>" +
+      journeyHTML(ind) +
+      '<div class="rec-wrap">' +
+      '<p class="rec-lead">Based on the complexity of your growth journey, this is the most appropriate starting architecture.</p>' +
+      recommendationHTML(ind) +
+      "</div>" +
+      '<div class="foundry-moment">' +
+      '<p class="fm-kicker">The Foundry principle</p>' +
+      '<p class="fm-pre">You\'ve just experienced the principle behind Eben Foundry.</p>' +
+      '<p class="fm-big">ONE ENGINE.<br><span class="gold">MANY BUSINESS MODELS.</span></p>' +
+      '<p class="fm-quote">"Different businesses have different growth mechanics. The infrastructure underneath can be intelligently configured around them."</p>' +
+      "</div>" +
+      '<div class="reveal-ctas">' +
+      '<a class="btn btn-gold" id="rvCtaWa" target="_blank" rel="noopener">Talk to Eben Foundry</a>' +
+      '<a class="btn btn-outline" id="rvCtaSummit" target="_blank" rel="noopener">Explore the Summit Experience</a>' +
+      "</div>" +
+      '<p style="text-align:center;margin-top:22px;"><a href="#/business" data-route="business" style="color:var(--muted);font-size:13px;text-decoration:underline;">Compare all configurations &amp; pricing</a></p>';
+
+    el("revealStep").innerHTML = html;
+
+    /* ---- CTAs: handoff + WhatsApp deep link + summit ---- */
+    const ctx = {
+      source: "builder",
+      industry: B.industry,
+      model: B.model,
+      business: B.business,
+      sells: B.sells,
+      customer: B.customer,
+      challenge: challengeList
+    };
+
+    const formBtn = el("rvCtaForm");
+    if (formBtn) {
+      const recPkg = CONFIG.pricing[B.model] && CONFIG.pricing[B.model][ind.id]
+        ? CONFIG.packages[B.model][complexityTier()].name
+        : "Commercial assessment";
+      formBtn.addEventListener("click", () => {
+        ctx.package = recPkg;
+        sessionStorage.setItem("eben_ctx", JSON.stringify(ctx));
+        location.hash = "#/nexus";
+      });
+    }
+
+    const waBtn = el("rvCtaWa");
+    if (waBtn && WA_BASE) {
+      const bits = ["Hello Eben Foundry, I'd like to discuss a growth system for my business."];
+      if (B.business) bits.push("Business: " + B.business);
+      bits.push("Industry: " + ind.name);
+      if (ctx.package || (CONFIG.pricing[B.model] && CONFIG.pricing[B.model][ind.id]))
+        bits.push("Configured package: " + (ctx.package || CONFIG.packages[B.model][complexityTier()].name));
+      waBtn.href = waLink(bits.join("\n"));
+    }
+
+    const summit = el("rvCtaSummit");
+    if (summit && CONFIG.summitUrl) summit.href = CONFIG.summitUrl;
+  }
+
+  function escapeHTML(s) {
+    return String(s).replace(/[&<>"']/g, c =>
+      ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  }
+
+  /* ============================================================
+     ENQUIRY HANDOFF — prefill the Nexus form from context
+     ============================================================ */
+  window.addEventListener("hashchange", () => {
+    const route = (location.hash || "").replace("#/", "").split("?")[0];
+    if (route !== "nexus") return;
+    let ctx = null;
+    try { ctx = JSON.parse(sessionStorage.getItem("eben_ctx") || "null"); } catch (e) {}
+    if (!ctx) return;
+    sessionStorage.removeItem("eben_ctx");
+
+    const setVal = (id, v) => { const n = el(id); if (n && v) n.value = v; };
+    setVal("f-business", ctx.business);
+    setVal("f-industry", ctx.industry === "other" ? "other-other" : ctx.industry);
+    setVal("f-model", ctx.model === "high" ? "high-ticket" : ctx.model === "low" ? "low-ticket" : "");
+    setVal("f-challenge", ctx.challenge);
+
+    const interest = el("f-interest");
+    if (interest) {
+      if (ctx.package === "Commercial assessment") interest.value = "assessment";
+      else if (ctx.package) interest.value = "growth-system";
+    }
+
+    const lines = ["Enquiry configured through the on-site system builder."];
+    if (ctx.business) lines.push("Business: " + ctx.business);
+    if (ctx.industry) lines.push("Industry: " + getIndustry(ctx.industry).name);
+    if (ctx.sells) lines.push("What we sell: " + ctx.sells);
+    if (ctx.customer) lines.push("Our customer: " + ctx.customer);
+    if (ctx.challenge) lines.push("Growth problem: " + ctx.challenge);
+    if (ctx.package) lines.push("Recommended starting architecture: " + ctx.package);
+    const msg = el("f-message");
+    if (msg) msg.value = lines.join("\n");
+
+    const note = el("handoffNote");
+    if (note) {
+      note.textContent = "We've carried your builder answers into this enquiry — add anything you like, nothing is lost.";
+      note.classList.add("show");
+      setTimeout(() => note.classList.remove("show"), 8000);
+    }
+  });
+
+  /* Package enquiry buttons on the pricing page carry the package name. */
+  document.addEventListener("click", e => {
+    const a = e.target.closest("#pricingPackages a[data-pkg]");
+    if (!a) return;
+    try {
+      sessionStorage.setItem("eben_ctx", JSON.stringify({ source: "pricing", package: a.dataset.pkg, industry: a.dataset.ind }));
+    } catch (err) {}
+  });
+
+  /* ============================================================
+     COMMERCIAL QUALIFICATION — budget routing note
+     ============================================================ */
+  const budgetSel = el("f-budget");
+  if (budgetSel) {
+    budgetSel.addEventListener("change", () => {
+      const note = el("budgetNote");
+      if (!note) return;
+      note.classList.toggle("show", budgetSel.value === "under-10k");
+    });
+  }
+
+  /* ============================================================
+     MARKETING STUDIO
+     ============================================================ */
+  const FLOW = ["Attention", "Interest", "Action", "Capture", "Conversion", "Retention", "Measurement"];
+  el("flowStrip").innerHTML = FLOW.map((f, i) => {
+    const arrow = i ? '<span class="flow-arrow">→</span>' : "";
+    const hot = f === "Action" || f === "Conversion" ? " hot" : "";
+    return arrow + '<span class="flow-node' + hot + '">' + f + "</span>";
+  }).join("");
+
+  const sInd = el("s-industry");
+  sInd.innerHTML = '<option value="">Select your industry</option>' +
+    CONFIG.industries.map(i => '<option value="' + i.id + '">' + i.name + "</option>").join("");
+
+  function contrast(hex) {
+    const c = hex.replace("#", "");
+    const r = parseInt(c.substr(0, 2), 16), g = parseInt(c.substr(2, 2), 16), b = parseInt(c.substr(4, 2), 16);
+    return (0.299 * r + 0.587 * g + 0.114 * b) > 150 ? "#26241E" : "#F4EFE6";
+  }
+
+  el("studioGo").addEventListener("click", () => {
+    const d = {
+      name: el("s-name").value.trim(),
+      industry: sInd.value || "other",
+      colA: el("s-colA").value,
+      colB: el("s-colB").value,
+      product: el("s-product").value.trim(),
+      offer: el("s-offer").value.trim(),
+      target: el("s-target").value.trim(),
+      cta: el("s-cta").value.trim()
+    };
+    if (!d.name || !d.offer) {
+      d.name = d.name || "Your Business";
+      const out = el("studioOut");
+      out.style.display = "block";
+      out.innerHTML = '<div class="card"><p class="kicker">Almost there</p><h3>Two inputs power the studio</h3><p style="color:var(--muted);font-size:14px;">Add your <strong>business name</strong> and <strong>offer</strong> so the concepts can be built around something real.</p></div>';
+      return;
+    }
+    const ind = getIndustry(d.industry);
+    const journey = ind.id === "other" ? ["Enquiry", "Qualification", "Conversion"] : ind.journey;
+    const start = journey[0], end = journey[journey.length - 1];
+    const ink = contrast(d.colA);
+
+    const concepts = [
+      {
+        t: "Campaign concept",
+        b: 'A campaign built around <strong>"' + escapeHTML(d.offer) + '"</strong> for ' + escapeHTML(d.target || "your ideal customer") +
+           ". The campaign's only job is to move people from attention to action — every response flows straight into your " +
+           start + " → " + end + " journey instead of dying in an inbox.",
+        w: "Marketing earns its keep by feeding the system, not by collecting likes."
+      },
+      {
+        t: "Social creative concept",
+        b: "One message, one audience, one action. The creative announces " + escapeHTML(d.offer) +
+           " in the language your customer already thinks in — and the call to action goes exactly one place.",
+        w: "Creative that tries to say everything converts nothing."
+      },
+      {
+        t: "Landing page concept",
+        b: "A single-purpose destination: the promise (" + escapeHTML(d.product || d.offer) + ") above the fold, the offer unmistakable, " +
+           escapeHTML((d.cta || "the call to action")) + " repeated at every decision point — and every enquiry captured into the journey automatically.",
+        w: "One page, one decision. Options belong to the journey, not the landing page."
+      },
+      {
+        t: "WhatsApp conversion concept",
+        b: "Enquiries are acknowledged instantly, asked one qualifying question, and guided to the next step — " +
+           "a conversation that feels personal because the structure never drops the ball.",
+        w: "Speed and structure decide conversion. Both are engineered in."
+      }
+    ];
+
+    const mockInk = contrast(d.colB);
+    el("studioOut").style.display = "block";
+    el("studioOut").innerHTML =
+      '<p class="kicker">Campaign concept — ' + ind.name + '</p>' +
+      '<h3 class="display" style="font-size:clamp(20px,4vw,28px);">' + escapeHTML(d.name) + " — " + escapeHTML(d.offer) + "</h3>" +
+      '<p class="micro" style="font-size:13px;max-width:560px;">Built for ' + escapeHTML(d.target || "your ideal customer") + ". This is how the front door connects to the growth system behind it.</p>" +
+      '<div class="creative-mock" style="background:' + d.colA + ";color:" + ink + ';">' +
+      '<span class="cm-brand">' + escapeHTML(d.name) + "</span>" +
+      '<div><p class="cm-head">' + escapeHTML(d.offer) + "</p>" +
+      '<p class="cm-body" style="margin-top:8px;">' + escapeHTML(d.product || ind.title) + "</p></div>" +
+      '<span class="cm-cta" style="background:' + d.colB + ";color:" + mockInk + ';">' + escapeHTML(d.cta || "Find out more") + "</span>" +
+      "</div>" +
+      '<p class="micro" style="text-align:center;">Social creative concept — rendered in your brand colours.</p>' +
+      '<div class="concept-grid">' +
+      concepts.map(c =>
+        '<div class="concept-card"><h4>' + c.t + "</h4><p>" + c.b + '</p><div class="why"><strong>Why this works</strong><br>' + c.w + "</div></div>"
+      ).join("") +
+      "</div>" +
+      '<div class="card mt-3" style="border-color:var(--gold-soft);">' +
+      '<p class="kicker">The point</p>' +
+      '<p style="font-size:15px;">Your marketing should not exist separately from your sales system. Attention is only the first stage — the engine is what turns it into ' + escapeHTML(end.toLowerCase()) + ".</p>" +
+      "</div>";
+
+    const top = el("studioOut").getBoundingClientRect().top + window.scrollY - 90;
+    window.scrollTo({ top: top, behavior: "smooth" });
+  });
+
+  /* Reset the wizard when a completed configuration is re-entered */
+  function resetWizard() {
+    B.step = 1; B.industry = null; B.business = ""; B.sells = ""; B.customer = "";
+    B.problems = []; B.customProblem = ""; B.model = null;
+    ["b-business", "b-sells", "b-customer"].forEach(id => { const n = el(id); if (n) n.value = ""; });
+    pillsWrap.querySelectorAll(".pill").forEach(p => p.classList.remove("active"));
+    el("bChips").innerHTML = "";
+    el("revealStep").innerHTML = "";
+    renderModelCards();
+    showStep(1);
+  }
+
+  function syncOnEnter() {
+    if (B.step === 7) { resetWizard(); return; }
+    if (B.industry) {
+      pillsWrap.querySelectorAll(".pill").forEach(p =>
+        p.classList.toggle("active", p.textContent === getIndustry(B.industry).name));
+      renderChips();
+      // restore previously selected problems
+      document.querySelectorAll("#bChips .chip").forEach(c => {
+        const on = B.problems.includes(c.textContent);
+        c.classList.toggle("on", on);
+      });
+      renderModelCards();
+    }
+    showStep(Math.min(B.step, 6));
+  }
+
+  window.addEventListener("hashchange", () => {
+    if ((location.hash || "").replace("#/", "").split("?")[0] === "builder") syncOnEnter();
+  });
+
+  /* Boot the wizard */
+  renderTrack();
+  showStep(1);
+})();
+</script></body></html>
