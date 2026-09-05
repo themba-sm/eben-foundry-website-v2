@@ -857,6 +857,19 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   .bstep.active, .chain-node, .chain-arrow, .rec-card, .foundry-moment, .studio-out { animation: none; opacity: 1; transform: none; }
 }
 
+
+/* ---- ENTER mockup copy-paste mode (exact reference image) ---- */
+body.on-enter header, body.on-enter .wa-fab { display: none !important; }
+#page-enter { padding: 0 !important; }
+.enter-mockup { display: none; min-height: 100svh; align-items: center; justify-content: center; background: var(--ivory); }
+#page-enter.mockup-mode .enter-mockup { display: flex; }
+#page-enter.mockup-mode .enter-screen { display: none; }
+.enter-mockup-frame { position: relative; width: min(100vw, calc(100svh * 0.6667)); }
+.enter-mockup-frame img { display: block; width: 100%; height: auto; }
+.hotspot { position: absolute; z-index: 5; border-radius: 50%; }
+.hs-back  { top: 2.4%; left: 4.0%; width: 14.5%; height: 6.6%; }
+.hs-brand { top: 2.0%; left: 17.0%; width: 26.5%; height: 4.4%; border-radius: 6px; }
+.hs-enter { top: 91.0%; left: 29.0%; width: 42.0%; height: 6.0%; border-radius: 8px; }
 </style>
 </head>
 <body>
@@ -975,6 +988,14 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 
 <!-- ================= ENTER (letter transition) ================= -->
 <section class="page" id="page-enter" data-page="enter" aria-label="Entering an EBEN section">
+  <div class="enter-mockup" id="enterMockup">
+    <div class="enter-mockup-frame">
+      <img id="mockupImg" src="assets/enter-e1-mockup.jpg" alt="Entering Enterprise" />
+      <a class="hotspot hs-back" href="#/home" aria-label="Back"></a>
+      <a class="hotspot hs-brand" href="#/home" data-route="home" aria-label="EBEN Foundry home"></a>
+      <a class="hotspot hs-enter" id="mockupEnter" href="#/engine" aria-label="Enter"></a>
+    </div>
+  </div>
   <div class="enter-screen">
     <div class="enter-head">
       <a class="enter-back" href="#/home" id="enterBack" aria-label="Back to letter selection">←</a>
@@ -1773,7 +1794,8 @@ function getIndustry(id) {
   const ENTER = {
     "enter-e1": { letter: "E", pos: 0, word: "ENTERPRISE", dest: "engine",
                   img: "assets/enter-e1.jpg",
-                  alt: "Classical archway opening onto a sunlit horizon of hills and mountains" },
+                  alt: "Classical archway opening onto a sunlit horizon of hills and mountains",
+                  mockup: "assets/enter-e1-mockup.jpg" },
     "enter-b":  { letter: "B", pos: 1, word: "BUILDING", dest: "business",
                   img: "assets/enter-b.jpg",
                   alt: "Emerald double doors opening onto a spiral staircase rising into warm light" },
@@ -1793,6 +1815,13 @@ function getIndustry(id) {
   function renderEnter(route) {
     const cfg = ENTER[route];
     if (!cfg) return;
+    const pageEl = document.getElementById("page-enter");
+    pageEl.classList.toggle("mockup-mode", !!cfg.mockup);
+    if (cfg.mockup) {
+      document.getElementById("mockupImg").src = cfg.mockup;
+      document.getElementById("mockupEnter").href = "#/" + cfg.dest;
+      return;
+    }
     document.getElementById("enterLetter").textContent = cfg.letter;
     document.getElementById("enterWord").textContent = cfg.word;
     const img = document.getElementById("enterImg");
@@ -1811,6 +1840,7 @@ function getIndustry(id) {
     const route = currentRoute();
     const page = route.indexOf("enter-") === 0 ? "enter" : route;
     document.querySelectorAll(".page").forEach(p => p.classList.toggle("active", p.dataset.page === page));
+    document.body.classList.toggle("on-enter", page === "enter");
     if (page === "enter") renderEnter(route);
     document.querySelectorAll("nav.main-nav a, .mobile-menu a").forEach(a => {
       a.classList.toggle("active", a.dataset.route === route && !a.classList.contains("nav-cta"));
@@ -1831,7 +1861,10 @@ function getIndustry(id) {
   });
 
   /* ---------------- Interactive EBEN gateway ---------------- */
-  Object.keys(ENTER).forEach(k => { const pre = new Image(); pre.src = ENTER[k].img; });
+  Object.keys(ENTER).forEach(k => {
+    const pre = new Image(); pre.src = ENTER[k].img;
+    if (ENTER[k].mockup) { const m = new Image(); m.src = ENTER[k].mockup; }
+  });
   const frame = document.getElementById("gatewayFrame");
   document.querySelectorAll(".eben-letter").forEach(letter => {
     letter.addEventListener("click", () => {
