@@ -600,8 +600,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   background: linear-gradient(180deg, var(--ivory), var(--ivory-2));
 }
 .founder-photo .fp-img {
-  width: 100%; max-width: 186px; aspect-ratio: 3 / 4; object-fit: cover; display: block;
-  border-radius: calc(var(--radius) - 8px); background: var(--ivory); margin: 0 auto;
+  width: 186px; max-width: 100%; height: 248px; aspect-ratio: 3 / 4; object-fit: cover;
+  object-position: center top; display: block; border-radius: calc(var(--radius) - 8px);
+  background: var(--ivory); margin: 0 auto; flex-shrink: 0;
 }
 .fp-frame .fp-mark { font-family: var(--font-display); font-size: 56px; font-weight: 600; color: var(--green); letter-spacing: 0.06em; }
 .fp-frame .fp-cap { font-size: 10px; font-weight: 700; letter-spacing: 0.24em; text-transform: uppercase; color: var(--muted); }
@@ -617,7 +618,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 }
 .vision-guard { font-size: 12.5px; color: var(--muted); margin-top: 14px; }
 
-@media (max-width: 720px) { .founder-grid { grid-template-columns: 1fr; } .founder-photo .fp-img { max-width: 200px; } }
+@media (max-width: 720px) { .founder-grid { grid-template-columns: 1fr; } .founder-photo .fp-img { width: 200px; height: 267px; } }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
@@ -1427,7 +1428,7 @@ body.on-enter header, body.on-enter .wa-fab { display: none !important; }
       <p class="kicker">Founder &amp; CEO</p>
       <div class="founder-grid mt-2">
         <figure class="founder-photo">
-          <img src="assets/founder-sinethemba-mtshali.jpg?v=6" alt="Sinethemba Mtshali, Founder and CEO of Eben Foundry" loading="lazy" width="960" height="1280" class="fp-img" onerror="fpFallback(this)" />
+          <img src="assets/founder-sinethemba-mtshali.jpg?v=7" alt="Sinethemba Mtshali, Founder and CEO of Eben Foundry" loading="lazy" width="960" height="1280" class="fp-img" onerror="fpFallback(this)" />
           <figcaption>Sinethemba Mtshali — Founder &amp; Chief Executive Officer, Eben Foundry</figcaption>
         </figure>
         <div class="founder-bio">
