@@ -1520,6 +1520,9 @@ const CONFIG = {
   // Endpoint receives validated enquiries and stores them securely.
   leadEndpoint: "https://superagent-1250f5b4.base44.app/functions/captureEbenLead",
 
+  // Every enquiry is also emailed here with all its details (best-effort relay).
+  leadEmail: "ebenfoundry@protonmail.com",
+
   /* ---------- CTA LABELS ---------- */
   ctas: {
     primary: "Build Your Growth System",
@@ -2097,6 +2100,23 @@ function getIndustry(id) {
     const submit = document.getElementById("leadSubmit");
     submit.disabled = true;
     submit.textContent = "Sending…";
+
+    /* Email relay — sends the full enquiry details to the owner's inbox.
+       Fire-and-forget: it must never block or break the main capture. */
+    try {
+      if (CONFIG.leadEmail && CONFIG.leadEmail.indexOf("@") !== -1) {
+        fetch("https://formsubmit.co/ajax/" + CONFIG.leadEmail, {
+          method: "POST",
+          headers: { "Content-Type": "application/json", "Accept": "application/json" },
+          body: JSON.stringify(Object.assign({
+            _subject: "New website enquiry — " + data.full_name + " (" + data.industry + ")",
+            _template: "table",
+            _captcha: "false",
+            _replyto: data.email
+          }, data))
+        }).catch(function () { /* relay is best-effort — capture still proceeds */ });
+      }
+    } catch (e) { /* relay is best-effort */ }
 
     try {
       let ok = false;
