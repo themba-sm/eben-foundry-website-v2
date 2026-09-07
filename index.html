@@ -1427,7 +1427,7 @@ body.on-enter header, body.on-enter .wa-fab { display: none !important; }
       <p class="kicker">Founder &amp; CEO</p>
       <div class="founder-grid mt-2">
         <figure class="founder-photo">
-          <img src="assets/founder-sinethemba-mtshali.jpg?v=5" alt="Sinethemba Mtshali, Founder and CEO of Eben Foundry" loading="lazy" width="800" height="1000" class="fp-img" />
+          <img src="assets/founder-sinethemba-mtshali.jpg?v=5" alt="Sinethemba Mtshali, Founder and CEO of Eben Foundry" loading="lazy" width="800" height="1000" class="fp-img" onerror="fpFallback(this)" />
           <figcaption>Sinethemba Mtshali — Founder &amp; Chief Executive Officer, Eben Foundry</figcaption>
         </figure>
         <div class="founder-bio">
@@ -2912,4 +2912,12 @@ function getIndustry(id) {
   // initial state: follow whatever the form already says
   select(sInd2 ? sInd2.value : null, false);
 })();
+</script>
+<script>
+function fpFallback(img) {
+  img.onerror = null;
+  img.classList.add("fp-broken");
+  img.removeAttribute("src");
+  img.insertAdjacentHTML("afterbegin", '<span style="font-family:var(--font-display);font-size:28px;color:var(--green);">SM</span><span>Photo coming soon</span>');
+}
 </script></body></html>
