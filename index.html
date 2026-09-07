@@ -517,7 +517,7 @@ nav.main-nav a:hover, nav.main-nav a.active { opacity: 1; border-color: var(--go
   color: var(--muted); margin-bottom: 7px;
 }
 .field label .req { color: var(--gold); }
-.field input, .field select, .field textarea {
+.field input:not([type="checkbox"]):not([type="radio"]), .field select, .field textarea {
   width: 100%; padding: 13px 14px;
   border: 1px solid var(--line); border-radius: var(--radius);
   background: var(--ivory); color: var(--ink);
@@ -531,14 +531,22 @@ nav.main-nav a:hover, nav.main-nav a.active { opacity: 1; border-color: var(--go
   padding-right: 36px;
 }
 .field textarea { min-height: 110px; resize: vertical; }
-.field input:focus, .field select:focus, .field textarea:focus {
+.field input:not([type="checkbox"]):not([type="radio"]):focus, .field select:focus, .field textarea:focus {
   outline: none; border-color: var(--gold);
 }
 .field .error { display: none; font-size: 12px; color: #9C3B26; margin-top: 5px; }
-.field.invalid input, .field.invalid select, .field.invalid textarea { border-color: #9C3B26; }
+.field.invalid input:not([type="checkbox"]):not([type="radio"]), .field.invalid select, .field.invalid textarea { border-color: #9C3B26; }
+.field.invalid .consent-row input[type="checkbox"] { outline: 2px solid #9C3B26; outline-offset: 2px; }
 .field.invalid .error { display: block; }
 .consent-row { display: flex; gap: 12px; align-items: flex-start; margin-top: 4px; }
-.consent-row input { width: 17px; height: 17px; margin-top: 3px; accent-color: var(--charcoal); flex-shrink: 0; }
+.consent-row input[type="checkbox"] {
+  -webkit-appearance: auto; appearance: auto;
+  width: 18px; height: 18px; margin-top: 2px;
+  accent-color: var(--gold);
+  border-radius: 4px;
+  flex-shrink: 0;
+  cursor: pointer;
+}
 .consent-row label { font-size: 13px; text-transform: none; letter-spacing: 0; font-weight: 500; color: var(--muted); line-height: 1.5; }
 .form-status { margin-top: 18px; font-size: 14px; display: none; padding: 15px 18px; border-radius: var(--radius); }
 .form-status.ok { display: block; background: rgba(30, 48, 38, 0.08); border: 1px solid var(--green); color: var(--green); }
